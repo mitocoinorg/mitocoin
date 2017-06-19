@@ -149,17 +149,16 @@ public:
 
         // Deployment of BIP68, BIP112, and BIP113.
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].bit = 0;
-        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1485561600; // January 28, 2017
+        consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nStartTime = 1485561600; // , 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_CSV].nTimeout = 1517356801; // January 31st, 2018
 
         // Deployment of SegWit (BIP141, BIP143, and BIP147)
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].bit = 1;
-        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1485561600; // January 28, 2017
+        consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nStartTime = 1485561600; // , 2017
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
         consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000005c13f99f6d0b1a908");
-
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -172,24 +171,33 @@ public:
         nDefaultPort = 9333;
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1317972665, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
-        consensus.hashGenesisBlock = uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9");
-        if (true && genesis.GetHash() != consensus.hashGenesisBlock)
+        genesis = CreateGenesisBlock(1485561600, 2084524493, 0x1e0ffff0, 1, 50 * COIN);
+
+        //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
+        
+        
+
+        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
         {
+            cout << "entraa" << endl;
+
             LogPrintf("recalculating params for mainnet.\n");
             LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
             // strprintf(consensus.hashGenesisBlock);
             // LogPrintf("old mainnet genesis hash:  %s\n", std::to_string(consensus.hashGenesisBlock));
             // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce = 0; genesis.GetHash() < consensus.powLimit; genesis.nNonce++){ } 
+            for(genesis.nNonce = 0; consensus.powLimit < genesis.GetHash(); genesis.nNonce++){ } 
             LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
-            // LogPrintf("new mainnet genesis nonce: %s\n", genesis.nNonce.ToString().c_str());
+            LogPrintf("new mainnet genesis nonce: %s\n", genesis.nNonce);
             LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
         }
 
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x12a765e31ffd4059bada1e25190f6e98c99d9714d334efa41a195a7e7e04bfe2"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        //cout << consensus.hashGenesisBlock.ToString() << endl;
+        //fc540599a3265e4526f331cda4c32fac8c35018ea394e913cfcf74bc16808e8c
+        //0x6a33cc213ec3f1b1126ba37b9933d44af40c570ae0c4a623b7d3c1959b3646c2
+        assert(consensus.hashGenesisBlock == uint256S("0x6a33cc213ec3f1b1126ba37b9933d44af40c570ae0c4a623b7d3c1959b3646c2"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd027e97de73142485cb9d84ce3bb92d038cc1a8235b3595bad45eff2db39576a"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vFixedSeeds.clear();
@@ -216,9 +224,9 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0x001"))
+			(  0, uint256S("0x6a33cc213ec3f1b1126ba37b9933d44af40c570ae0c4a623b7d3c1959b3646c2"))
 			,
-			1497823933, // * UNIX timestamp of last checkpoint block
+			1485561600, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
 			500.0     // * estimated number of transactions per day after checkpoint
@@ -272,23 +280,25 @@ public:
         nDefaultPort = 19333;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1317798646, 385270584, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1483228800, 385270584, 0x1e0ffff0, 1, 50 * COIN);
         // added by freeman
-        consensus.hashGenesisBlock = uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9");
-        if (true && genesis.GetHash() != consensus.hashGenesisBlock)
+        //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
+        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
         {
             LogPrintf("recalculating params for testnet.\n");
             LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
             LogPrintf("old mainnet genesis hash:  %s\n", consensus.hashGenesisBlock.ToString());
             // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce = 0; genesis.GetHash() < consensus.powLimit; genesis.nNonce++){ } 
+            for(genesis.nNonce = 0; consensus.powLimit < genesis.GetHash(); genesis.nNonce++){ } 
             LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
             LogPrintf("new mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
             LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
         }
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0xf5ae71e26c74beacc88382716aced69cddf3dffff24f384e1808905e0188f68f"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+        //cout << consensus.hashGenesisBlock.ToString() << endl;
+        //cout << genesis.hashMerkleRoot.ToString() << endl;
+        assert(consensus.hashGenesisBlock == uint256S("0x35fdddd59dbe8f498e847dafacfaea2cdfe9129712591624485e3f0f30d67a93"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd027e97de73142485cb9d84ce3bb92d038cc1a8235b3595bad45eff2db39576a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -315,8 +325,8 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x002")),
-            1497823933,
+            ( 0, uint256S("0x35fdddd59dbe8f498e847dafacfaea2cdfe9129712591624485e3f0f30d67a93")),
+            1483228800,
             0,
             250
         };
@@ -367,21 +377,24 @@ public:
 
         genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
 
-        consensus.hashGenesisBlock = uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9");
-        if (true && genesis.GetHash() != consensus.hashGenesisBlock)
+        consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
+        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
         {
             LogPrintf("recalculating params for regtest.\n");
             LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
             LogPrintf("old mainnet genesis hash:  %s\n", consensus.hashGenesisBlock.ToString());
             // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce = 0; genesis.GetHash() < consensus.powLimit; genesis.nNonce++){ } 
+            for(genesis.nNonce = 0; consensus.powLimit < genesis.GetHash(); genesis.nNonce++){ } 
             LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
             LogPrintf("new mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
             LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
         }
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x530827f38f93b43ed12af0b3ad25a288dc02ed74d6d7857862df51fc56c416f9"));
-        assert(genesis.hashMerkleRoot == uint256S("0x97ddfbbae6be97fd6cdf3e7ca13232a3afff2353e29badfab7f73011edd4ced9"));
+
+        //cout << consensus.hashGenesisBlock.ToString() << endl;
+        //cout << genesis.hashMerkleRoot.ToString() << endl;
+        assert(consensus.hashGenesisBlock == uint256S("0xfc540599a3265e4526f331cda4c32fac8c35018ea394e913cfcf74bc16808e8c"));
+        assert(genesis.hashMerkleRoot == uint256S("0xd027e97de73142485cb9d84ce3bb92d038cc1a8235b3595bad45eff2db39576a"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -394,7 +407,7 @@ public:
 
 	checkpointData = (CCheckpointData){
 		boost::assign::map_list_of
-			( 0, uint256S("0f9188f13cb7b2c71f2a335e3a4fc328bf5beb436012afca590b1a11466e2206")),
+			( 0, uint256S("0xfc540599a3265e4526f331cda4c32fac8c35018ea394e913cfcf74bc16808e8c")),
 			0,
 			0,
 			0
