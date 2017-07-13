@@ -244,7 +244,7 @@ public:
         nDefaultPort = 159333;//from 159333 to 
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1485561600, 385270584, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1485561600, 1062793, 0x1e0ffff0, 1, 50 * COIN);
         // added by freeman
         //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
         if (false && genesis.GetHash() != consensus.hashGenesisBlock)
@@ -261,7 +261,7 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         // cout << consensus.hashGenesisBlock.ToString() << endl;
         // cout << genesis.hashMerkleRoot.ToString() << endl;
-        assert(consensus.hashGenesisBlock == uint256S("0x4d2a5ce75949180eebe3c270687e8a7bd14609a57718dfb28d2dcb54cf90efb5"));
+        assert(consensus.hashGenesisBlock == uint256S("0xbdeb09e5fdbaa30befa79be588e15ffc467b63e492724664777a387b8496c46a"));
         assert(genesis.hashMerkleRoot == uint256S("0xc93b6ce91b097335eae3c0d86e384fb897ab93e9202836be1038c091d77d489a"));
 
         vFixedSeeds.clear();
@@ -289,7 +289,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0x4d2a5ce75949180eebe3c270687e8a7bd14609a57718dfb28d2dcb54cf90efb5")),
+            ( 0, uint256S("0xbdeb09e5fdbaa30befa79be588e15ffc467b63e492724664777a387b8496c46a")),
             1485561600,
             0,
             250
