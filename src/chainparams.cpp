@@ -371,10 +371,13 @@ public:
 
 	checkpointData = (CCheckpointData){
 		boost::assign::map_list_of
-			( 0, uint256S("0x4806d7208c11e005f8e2d9d359069d42bb77f8946970b815b50057ffdd657702")),
-			0,
-			0,
-			0
+			( 0, uint256S("0x4806d7208c11e005f8e2d9d359069d42bb77f8946970b815b50057ffdd657702"))
+            ( 1, uint256S("0x9831bdd18bdfa485d12aca56ae7d30022df57ccdcc3d22792119ba726db33614"))
+            ( 2, uint256S("0x86690b250c443b1e91aedf92af1e7dabafe8b09b25c794a4d39bd5823cdf5d40"))
+            ( 3, uint256S("0x054df0f27a598753ef0c67dcaf75d959b2bc21f46b86900197b524e0528241bf")),
+			1499047871,
+			2,
+			200
 	};
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,100);
