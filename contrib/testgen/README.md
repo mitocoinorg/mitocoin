@@ -1,6 +1,6 @@
 ### TestGen ###
 
-Utilities to generate test vectors for the data-driven Bolsonarocoin tests.
+Utilities to generate test vectors for the data-driven Mitocoin tests.
 
 Usage: 
 

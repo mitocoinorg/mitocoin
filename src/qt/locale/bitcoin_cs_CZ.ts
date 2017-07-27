@@ -86,8 +86,8 @@
         <translation>Změnit heslo k šifrování peněženky</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>&amp;File</source>

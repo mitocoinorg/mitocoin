@@ -114,8 +114,8 @@
         <translation>Newid y cyfrinymadrodd a ddefnyddiwyd ar gyfer amgryptio'r waled</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -490,8 +490,8 @@
         <translation>Opsiynau:</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Craidd Bolsonarocoin</translation>
+        <source>Mitocoin Core</source>
+        <translation>Craidd Mitocoin</translation>
     </message>
     <message>
         <source>Information</source>

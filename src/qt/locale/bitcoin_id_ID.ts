@@ -154,8 +154,8 @@
         <translation>Mengindex ulang blok di dalam disk...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Kirim koin ke alamat Bolsonarocoin</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Kirim koin ke alamat Mitocoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -178,8 +178,8 @@
         <translation>&amp;Verifikasi pesan...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -206,12 +206,12 @@
         <translation>Enkripsi private key yang dimiliki dompet Anda</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Tanda tangani sebuah pesan menggunakan alamat Bolsonarocoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Tanda tangani sebuah pesan menggunakan alamat Mitocoin Anda untuk membuktikan bahwa Anda adalah pemilik alamat tersebut</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Bolsonarocoin tertentu</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Verifikasi pesan untuk memastikan bahwa pesan tersebut ditanda tangani oleh suatu alamat Mitocoin tertentu</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -230,8 +230,8 @@
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan bolsonarocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Permintaan pembayaran (membuat kode QR dan mitocoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -242,16 +242,16 @@
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Buka URI bolsonarocoin: atau permintaan pembayaran</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Buka URI mitocoin: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;pilihan Command-line</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bolsonarocoin network</source>
-        <translation><numerusform>%n koneksi aktif ke jaringan Bolsonarocoin</numerusform></translation>
+        <source>%n active connection(s) to Mitocoin network</source>
+        <translation><numerusform>%n koneksi aktif ke jaringan Mitocoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -669,16 +669,16 @@
         <translation>&amp;Perubahan saldo untuk transaksi yang belum dikonfirmasi</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Otomatis membuka port client Bolsonarocoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Otomatis membuka port client Mitocoin di router. Hanya berjalan apabila router anda mendukung UPnP dan di-enable.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Petakan port dengan &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bolsonarocoin network through a SOCKS5 proxy.</source>
-        <translation>Hubungkan ke jaringan Bolsonarocoin melalui SOCKS5 proxy.</translation>
+        <source>Connect to the Mitocoin network through a SOCKS5 proxy.</source>
+        <translation>Hubungkan ke jaringan Mitocoin melalui SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -784,8 +784,8 @@
         <translation>Formulir</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Bolsonarocoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informasi terlampir mungkin sudah kedaluwarsa. Dompet Anda secara otomatis mensinkronisasi dengan jaringan Mitocoin ketika sebuah hubungan terbentuk, namun proses ini belum selesai.</translation>
     </message>
     <message>
         <source>Available:</source>
@@ -841,8 +841,8 @@
         <translation>Nilai</translation>
     </message>
     <message>
-        <source>Enter a Bolsonarocoin address (e.g. %1)</source>
-        <translation>Masukkan alamat Bolsonarocoin (contoh %1)</translation>
+        <source>Enter a Mitocoin address (e.g. %1)</source>
+        <translation>Masukkan alamat Mitocoin (contoh %1)</translation>
     </message>
     <message>
         <source>%1 h</source>
@@ -1317,8 +1317,8 @@
         <translation>Salin tanda tangan terpilih ke sistem klipboard</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
-        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Bolsonarocoin ini</translation>
+        <source>Sign the message to prove you own this Mitocoin address</source>
+        <translation>Tandai pesan untuk menyetujui kamu pemiliki alamat Mitocoin ini</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1418,8 +1418,8 @@
         <translation>Terima hubungan dari luar (standar: 1 kalau -proxy atau -connect tidak dipilih)</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>Execute command when a wallet transaction changes (%s in cmd is replaced by TxID)</source>

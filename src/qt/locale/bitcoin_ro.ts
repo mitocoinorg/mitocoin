@@ -142,8 +142,8 @@
         <translation>Deschide &amp;URI...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Trimite monedele către o adresă Bolsonarocoin</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Trimite monedele către o adresă Mitocoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>&amp;Verifică mesajul...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Criptează cheile private care aparțin portofelului tău.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Semnează mesajele cu adresa ta de Bolsonarocoin pentru a face dovada că îți aparțin.</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Semnează mesajele cu adresa ta de Mitocoin pentru a face dovada că îți aparțin.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Bolsonarocoin specificată.</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Verifică mesajele cu scopul de a asigura faptul că au fost semnate cu adresa de Mitocoin specificată.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -214,12 +214,12 @@
         <translation>&amp;Ajutor</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Cerere plată (generează coduri QR și bolsonarocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Cerere plată (generează coduri QR și mitocoin: URIs)</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Deschide un bolsonarocoin: URI sau cerere de plată</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Deschide un mitocoin: URI sau cerere de plată</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -746,8 +746,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>Information</source>

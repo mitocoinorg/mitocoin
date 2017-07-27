@@ -166,8 +166,8 @@
         <translation>Đánh chỉ số (indexing) lại các khối (blocks) trên ổ đĩa ...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Gửi coins đến tài khoản Bolsonarocoin</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Gửi coins đến tài khoản Mitocoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -186,8 +186,8 @@
         <translation>&amp;Tin nhắn xác thực</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -214,12 +214,12 @@
         <translation>Mã hoá các khoá bí mật trong Ví của bạn.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Dùng địa chỉ Bolsonarocoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Dùng địa chỉ Mitocoin của bạn ký các tin nhắn để xác minh những nội dung tin nhắn đó là của bạn.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Bolsonarocoin xác định.</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Kiểm tra các tin nhắn để chắc chắn rằng chúng được ký bằng các địa chỉ Mitocoin xác định.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -238,8 +238,8 @@
         <translation>Thanh công cụ (toolbar)</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Bolsonarocoin: URLs)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Yêu cầu thanh toán(tạo mã QR và địa chỉ Mitocoin: URLs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -250,8 +250,8 @@
         <translation>Hiện thỉ danh sách các địa chỉ và nhãn đã dùng để nhận.</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Mở bolsonarocoin:URL hoặc yêu cầu thanh toán</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Mở mitocoin:URL hoặc yêu cầu thanh toán</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
@@ -533,8 +533,8 @@
         <translation>Ví</translation>
     </message>
     <message>
-        <source>Connect to the Bolsonarocoin network through a SOCKS5 proxy.</source>
-        <translation>Kết nối đến máy chủ Bolsonarocoin thông qua SOCKS5 proxy.</translation>
+        <source>Connect to the Mitocoin network through a SOCKS5 proxy.</source>
+        <translation>Kết nối đến máy chủ Mitocoin thông qua SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1008,8 +1008,8 @@
         <translation>Lựa chọn:</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>(default: %u)</source>

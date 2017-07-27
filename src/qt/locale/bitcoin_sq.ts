@@ -94,8 +94,8 @@
         <translation>Ndrysho frazkalimin e përdorur per enkriptimin e portofolit</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -438,8 +438,8 @@
         <translation>Opsionet:</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Berthama Bolsonarocoin</translation>
+        <source>Mitocoin Core</source>
+        <translation>Berthama Mitocoin</translation>
     </message>
     <message>
         <source>Information</source>

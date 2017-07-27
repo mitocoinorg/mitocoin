@@ -1,11 +1,11 @@
 Benchmarking
 ============
 
-Bolsonarocoin Core has an internal benchmarking framework, with benchmarks
+Mitocoin Core has an internal benchmarking framework, with benchmarks
 for cryptographic algorithms such as SHA1, SHA256, SHA512 and RIPEMD160. As well as the rolling bloom filter.
 
-After compiling bolsonarocoin-core, the benchmarks can be run with:
-`src/bench/bench_bolsonarocoin`
+After compiling mitocoin-core, the benchmarks can be run with:
+`src/bench/bench_mitocoin`
 
 The output will look similar to:
 ```

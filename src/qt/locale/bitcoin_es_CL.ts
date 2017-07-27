@@ -142,8 +142,8 @@
         <translation>Cargando el index de bloques...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Enviar monedas a una dirección bolsonarocoin</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Enviar monedas a una dirección mitocoin</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -166,8 +166,8 @@
         <translation>Verificar mensaje....</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -186,7 +186,7 @@
         <translation>&amp;Mostrar/Ocultar</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
         <translation>Firmar un mensaje para provar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -206,8 +206,8 @@
         <translation>Barra de pestañas</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Pide pagos (genera codigos QR and bolsonarocoin: URls)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Pide pagos (genera codigos QR and mitocoin: URls)</translation>
     </message>
     <message>
         <source>%1 and %2</source>
@@ -368,8 +368,8 @@
         <translation>experto</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abre automáticamente el puerto del cliente Bolsonarocoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abre automáticamente el puerto del cliente Mitocoin en el router. Esto funciona solo cuando tu router es compatible con UPnP y está habilitado.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -689,7 +689,7 @@
         <translation>Firma</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
+        <source>Sign the message to prove you own this Mitocoin address</source>
         <translation>Firmar un mensjage para probar que usted es dueño de esta dirección</translation>
     </message>
     <message>
@@ -774,8 +774,8 @@
 </translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>bolsonarocoin core</translation>
+        <source>Mitocoin Core</source>
+        <translation>mitocoin core</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>

@@ -65,11 +65,11 @@ TESTS =
 BENCHMARKS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += bolsonarocoind
+  bin_PROGRAMS += mitocoind
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += bolsonarocoin-cli bolsonarocoin-tx
+  bin_PROGRAMS += mitocoin-cli mitocoin-tx
 endif
 
 .PHONY: FORCE check-symbols check-security
@@ -339,16 +339,16 @@ nodist_libbitcoin_util_a_SOURCES = $(srcdir)/obj/build.h
 #
 
 # bitcoind binary #
-bolsonarocoind_SOURCES = bitcoind.cpp
-bolsonarocoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-bolsonarocoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bolsonarocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mitocoind_SOURCES = bitcoind.cpp
+mitocoind_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+mitocoind_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+mitocoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bolsonarocoind_SOURCES += bitcoind-res.rc
+mitocoind_SOURCES += bitcoind-res.rc
 endif
 
-bolsonarocoind_LDADD = \
+mitocoind_LDADD = \
   $(LIBBITCOIN_SERVER) \
   $(LIBBITCOIN_COMMON) \
   $(LIBUNIVALUE) \
@@ -361,38 +361,38 @@ bolsonarocoind_LDADD = \
   $(LIBMEMENV) \
   $(LIBSECP256K1)
 
-bolsonarocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
+mitocoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS) $(ZMQ_LIBS)
 
 # bitcoin-cli binary #
-bolsonarocoin_cli_SOURCES = bitcoin-cli.cpp
-bolsonarocoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
-bolsonarocoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bolsonarocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mitocoin_cli_SOURCES = bitcoin-cli.cpp
+mitocoin_cli_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
+mitocoin_cli_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+mitocoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bolsonarocoin_cli_SOURCES += bitcoin-cli-res.rc
+mitocoin_cli_SOURCES += bitcoin-cli-res.rc
 endif
 
-bolsonarocoin_cli_LDADD = \
+mitocoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_UTIL) \
   $(LIBBITCOIN_CRYPTO)
 
-bolsonarocoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
+mitocoin_cli_LDADD += $(BOOST_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(EVENT_LIBS)
 #
 
 # bitcoin-tx binary #
-bolsonarocoin_tx_SOURCES = bitcoin-tx.cpp
-bolsonarocoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
-bolsonarocoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
-bolsonarocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+mitocoin_tx_SOURCES = bitcoin-tx.cpp
+mitocoin_tx_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES)
+mitocoin_tx_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+mitocoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-bolsonarocoin_tx_SOURCES += bitcoin-tx-res.rc
+mitocoin_tx_SOURCES += bitcoin-tx-res.rc
 endif
 
-bolsonarocoin_tx_LDADD = \
+mitocoin_tx_LDADD = \
   $(LIBUNIVALUE) \
   $(LIBBITCOIN_COMMON) \
   $(LIBBITCOIN_UTIL) \
@@ -400,7 +400,7 @@ bolsonarocoin_tx_LDADD = \
   $(LIBBITCOIN_CRYPTO) \
   $(LIBSECP256K1)
 
-bolsonarocoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
+mitocoin_tx_LDADD += $(BOOST_LIBS) $(CRYPTO_LIBS)
 #
 
 # bitcoinconsensus library #

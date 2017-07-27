@@ -154,8 +154,8 @@
         <translation>Blokai iš naujo indeksuojami...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Siųsti monetas Bolsonarocoin adresui</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Siųsti monetas Mitocoin adresui</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -178,8 +178,8 @@
         <translation>&amp;Tikrinti žinutę...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -415,8 +415,8 @@
         <translation>Piniginė</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatiškai atidaryti Bolsonarocoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatiškai atidaryti Mitocoin kliento prievadą maršrutizatoriuje. Tai veikia tik tada, kai jūsų maršrutizatorius palaiko UPnP ir ji įjungta.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -845,7 +845,7 @@
         <translation>Įveskite pranešimą, kurį norite pasirašyti čia</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
+        <source>Sign the message to prove you own this Mitocoin address</source>
         <translation>Registruotis žinute įrodymuii, kad turite šį adresą</translation>
     </message>
     <message>
@@ -861,8 +861,8 @@
         <translation>&amp;Patikrinti žinutę</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bolsonarocoin address</source>
-        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Bolsonarocoin adresas</translation>
+        <source>Verify the message to ensure it was signed with the specified Mitocoin address</source>
+        <translation>Patikrinkite žinutę, jog įsitikintumėte, kad ją pasirašė nurodytas Mitocoin adresas</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -934,8 +934,8 @@
         <translation>Dirbti fone kaip šešėlyje ir priimti komandas</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin branduolys</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin branduolys</translation>
     </message>
     <message>
         <source>Connect only to the specified node(s)</source>

@@ -16,14 +16,14 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "Bolsonarocoin"
-            VALUE "FileDescription",    "bolsonarocoind (Bolsonarocoin node with a JSON-RPC server)"
+            VALUE "CompanyName",        "Mitocoin"
+            VALUE "FileDescription",    "mitocoind (Mitocoin node with a JSON-RPC server)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "bolsonarocoind"
+            VALUE "InternalName",       "mitocoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "bolsonarocoind.exe"
-            VALUE "ProductName",        "bolsonarocoind"
+            VALUE "OriginalFilename",   "mitocoind.exe"
+            VALUE "ProductName",        "mitocoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

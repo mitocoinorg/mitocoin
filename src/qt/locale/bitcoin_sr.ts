@@ -114,8 +114,8 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Пошаљите новац на bolsonarocoin адресу</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Пошаљите новац на mitocoin адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

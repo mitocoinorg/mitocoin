@@ -62,12 +62,12 @@
         <translation>Vastuvõtvad aadressid</translation>
     </message>
     <message>
-        <source>These are your Bolsonarocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Need on sinu Bolsonarocoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
+        <source>These are your Mitocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Need on sinu Mitocoin aadressid maksete saatmiseks. Ennem müntide saatmist kontrolli alati summat ja makse saaja aadressi.</translation>
     </message>
     <message>
-        <source>These are your Bolsonarocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Need on sinu Bolsonarocoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
+        <source>These are your Mitocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Need on sinu Mitocoin aadressid sisenevate maksete vastu võtmiseks. Soovitav on iga tehingu tarbeks kasutada uut aadressi.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -286,8 +286,8 @@
         <translation>Kettal olevate blokkide re-indekseerimine...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Saada münte Bolsonarocoini aadressile</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Saada münte Mitocoini aadressile</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -310,8 +310,8 @@
         <translation>&amp;Kontrolli sõnumit...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -338,12 +338,12 @@
         <translation>Krüpteeri oma rahakoti privaatvõtmed</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Bolsonarocoini aadressiga</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Omandi tõestamiseks allkirjasta sõnumid oma Mitocoini aadressiga</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Bolsonarocoini aadressiga</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Kinnita sõnumid kindlustamaks et need allkirjastati määratud Mitocoini aadressiga</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -362,20 +362,20 @@
         <translation>Vahelehe tööriistariba</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Loo maksepäring (genereerib QR koodid ja bolsonarocoini: URId)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Loo maksepäring (genereerib QR koodid ja mitocoini: URId)</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Ava bolsonarocoini: URI või maksepäring</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Ava mitocoini: URI või maksepäring</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Käsurea valikud</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bolsonarocoin network</source>
-        <translation><numerusform>%n aktiivne ühendus Bolsonarocoini võrku</numerusform><numerusform>%n aktiivset ühendust Bolsonarocoini võrku</numerusform></translation>
+        <source>%n active connection(s) to Mitocoin network</source>
+        <translation><numerusform>%n aktiivne ühendus Mitocoini võrku</numerusform><numerusform>%n aktiivset ühendust Mitocoini võrku</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -710,8 +710,8 @@
         <translation>Muuda saatvat aadressi</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bolsonarocoin address.</source>
-        <translation>Sisestatud aadress "%1" ei ole korrektne Bolsonarocoin aadress.</translation>
+        <source>The entered address "%1" is not a valid Mitocoin address.</source>
+        <translation>Sisestatud aadress "%1" ei ole korrektne Mitocoin aadress.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -825,8 +825,8 @@
         <translation>Ekspert</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Bolsonarocoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Mitocoini kliendi pordi automaatne avamine ruuteris. Toimib, kui sinu ruuter aktsepteerib UPnP ühendust.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
@@ -908,7 +908,7 @@
         <translation>Vorm</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Kuvatav info ei pruugi olla ajakohane. Ühenduse loomisel süngitakse sinu rahakott automaatselt Bitconi võrgustikuga, kuid see toiming on hetkel lõpetamata.</translation>
     </message>
     <message>
@@ -1375,8 +1375,8 @@
         <translation>Maksepäring aegunud.</translation>
     </message>
     <message>
-        <source>Warning: Invalid Bolsonarocoin address</source>
-        <translation>Hoiatus: Ebakorrektne Bolsonarocoin aadress</translation>
+        <source>Warning: Invalid Mitocoin address</source>
+        <translation>Hoiatus: Ebakorrektne Mitocoin aadress</translation>
     </message>
     <message>
         <source>(no label)</source>
@@ -1455,8 +1455,8 @@
         <translation>&amp;Allkirjastamise teade</translation>
     </message>
     <message>
-        <source>The Bolsonarocoin address to sign the message with</source>
-        <translation>Bolsonarocoin aadress millega sõnum allkirjastada</translation>
+        <source>The Mitocoin address to sign the message with</source>
+        <translation>Mitocoin aadress millega sõnum allkirjastada</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1487,8 +1487,8 @@
         <translation>Kopeeri praegune signatuur vahemällu</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
-        <translation>Allkirjasta sõnum Bolsonarocoini aadressi sulle kuulumise tõestamiseks</translation>
+        <source>Sign the message to prove you own this Mitocoin address</source>
+        <translation>Allkirjasta sõnum Mitocoini aadressi sulle kuulumise tõestamiseks</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1507,12 +1507,12 @@
         <translation>&amp;Kinnita Sõnum</translation>
     </message>
     <message>
-        <source>The Bolsonarocoin address the message was signed with</source>
-        <translation>Bolsonarocoin aadress millega sõnum on allkirjastatud</translation>
+        <source>The Mitocoin address the message was signed with</source>
+        <translation>Mitocoin aadress millega sõnum on allkirjastatud</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bolsonarocoin address</source>
-        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Bolsonarocoin aadressiga.</translation>
+        <source>Verify the message to ensure it was signed with the specified Mitocoin address</source>
+        <translation>Kinnita sõnum tõestamaks selle allkirjastatust määratud Mitocoin aadressiga.</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1800,8 +1800,8 @@
         <translation>Luba välisühendusi (vaikeväärtus: 1 kui puudub -proxy või -connect)</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoini tuumik</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoini tuumik</translation>
     </message>
     <message>
         <source>Bind to given address and always listen on it. Use [host]:port notation for IPv6</source>

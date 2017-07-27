@@ -21,12 +21,12 @@ Before every major release:
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/bolsonarocoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/bolsonarocoin-project/bolsonarocoin-detached-sigs.git
+    git clone https://github.com/mitocoin-project/gitian.sigs.mmc.git
+    git clone https://github.com/mitocoin-project/mitocoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/bolsonarocoin-project/bolsonarocoin.git
+    git clone https://github.com/mitocoin-project/mitocoin.git
 
-### Bolsonarocoin maintainers/release engineers, update version in sources
+### Mitocoin maintainers/release engineers, update version in sources
 
 Update the following:
 
@@ -63,16 +63,16 @@ Tag version (or release candidate) in git
 
 Setup Gitian descriptors:
 
-    pushd ./bolsonarocoin
+    pushd ./mitocoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
     git checkout v${VERSION}
     popd
 
-Ensure your gitian.sigs.ltc are up-to-date if you wish to gverify your builds against other Gitian signatures.
+Ensure your gitian.sigs.mmc are up-to-date if you wish to gverify your builds against other Gitian signatures.
 
-    pushd ./gitian.sigs.ltc
+    pushd ./gitian.sigs.mmc
     git pull
     popd
 
@@ -97,7 +97,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../bolsonarocoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../mitocoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -105,94 +105,94 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url bolsonarocoin=/path/to/bolsonarocoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url mitocoin=/path/to/mitocoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign Bolsonarocoin Core for Linux, Windows, and OS X:
+### Build and sign Mitocoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit bolsonarocoin=v${VERSION} ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/bolsonarocoin-*.tar.gz build/out/src/bolsonarocoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit mitocoin=v${VERSION} ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/mitocoin-*.tar.gz build/out/src/mitocoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit bolsonarocoin=v${VERSION} ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/bolsonarocoin-*-win-unsigned.tar.gz inputs/bolsonarocoin-win-unsigned.tar.gz
-    mv build/out/bolsonarocoin-*.zip build/out/bolsonarocoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit mitocoin=v${VERSION} ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/mitocoin-*-win-unsigned.tar.gz inputs/mitocoin-win-unsigned.tar.gz
+    mv build/out/mitocoin-*.zip build/out/mitocoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit bolsonarocoin=v${VERSION} ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/bolsonarocoin-*-osx-unsigned.tar.gz inputs/bolsonarocoin-osx-unsigned.tar.gz
-    mv build/out/bolsonarocoin-*.tar.gz build/out/bolsonarocoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit mitocoin=v${VERSION} ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/mitocoin-*-osx-unsigned.tar.gz inputs/mitocoin-osx-unsigned.tar.gz
+    mv build/out/mitocoin-*.tar.gz build/out/mitocoin-*.dmg ../
     popd
 
 Build output expected:
 
-  1. source tarball (`bolsonarocoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`bolsonarocoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`bolsonarocoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `bolsonarocoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`bolsonarocoin-${VERSION}-osx-unsigned.dmg`, `bolsonarocoin-${VERSION}-osx64.tar.gz`)
-  5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
+  1. source tarball (`mitocoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`mitocoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`mitocoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `mitocoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`mitocoin-${VERSION}-osx-unsigned.dmg`, `mitocoin-${VERSION}-osx64.tar.gz`)
+  5. Gitian signatures (in `gitian.sigs.mmc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring
 
-    gpg --import bolsonarocoin/contrib/gitian-keys/*.pgp
+    gpg --import mitocoin/contrib/gitian-keys/*.pgp
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-linux ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-win-unsigned ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-osx-unsigned ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
 
-Commit your signature to gitian.sigs.ltc:
+Commit your signature to gitian.sigs.mmc:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.mmc
     git add ${VERSION}-linux/${SIGNER}
     git add ${VERSION}-win-unsigned/${SIGNER}
     git add ${VERSION}-osx-unsigned/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.ltc tree
+    git push  # Assuming you can push to the gitian.sigs.mmc tree
     popd
 
 Wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [bolsonarocoin-detached-sigs](https://github.com/bolsonarocoin-project/bolsonarocoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [mitocoin-detached-sigs](https://github.com/mitocoin-project/mitocoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/bolsonarocoin-osx-signed.dmg ../bolsonarocoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-osx-signed ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/mitocoin-osx-signed.dmg ../mitocoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../bolsonarocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../bolsonarocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/bolsonarocoin-*win64-setup.exe ../bolsonarocoin-${VERSION}-win64-setup.exe
-    mv build/out/bolsonarocoin-*win32-setup.exe ../bolsonarocoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../mitocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-win-signed ../mitocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/mitocoin-*win64-setup.exe ../mitocoin-${VERSION}-win64-setup.exe
+    mv build/out/mitocoin-*win32-setup.exe ../mitocoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.mmc
     git add ${VERSION}-osx-signed/${SIGNER}
     git add ${VERSION}-win-signed/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.ltc tree
+    git push  # Assuming you can push to the gitian.sigs.mmc tree
     popd
 
 ### After 3 or more people have gitian-built and their results match:
@@ -205,23 +205,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-bolsonarocoin-${VERSION}-aarch64-linux-gnu.tar.gz
-bolsonarocoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-bolsonarocoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-bolsonarocoin-${VERSION}-x86_64-linux-gnu.tar.gz
-bolsonarocoin-${VERSION}-osx64.tar.gz
-bolsonarocoin-${VERSION}-osx.dmg
-bolsonarocoin-${VERSION}.tar.gz
-bolsonarocoin-${VERSION}-win32-setup.exe
-bolsonarocoin-${VERSION}-win32.zip
-bolsonarocoin-${VERSION}-win64-setup.exe
-bolsonarocoin-${VERSION}-win64.zip
+mitocoin-${VERSION}-aarch64-linux-gnu.tar.gz
+mitocoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+mitocoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+mitocoin-${VERSION}-x86_64-linux-gnu.tar.gz
+mitocoin-${VERSION}-osx64.tar.gz
+mitocoin-${VERSION}-osx.dmg
+mitocoin-${VERSION}.tar.gz
+mitocoin-${VERSION}-win32-setup.exe
+mitocoin-${VERSION}-win32.zip
+mitocoin-${VERSION}-win64-setup.exe
+mitocoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the bolsonarocoin.org server, nor put them in the torrent*.
+space *do not upload these to the mitocoin.org server, nor put them in the torrent*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -231,23 +231,23 @@ rm SHA256SUMS
 (the digest algorithm is forced to sha256 to avoid confusion of the `Hash:` header that GPG adds with the SHA256 used for the files)
 Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spurious/nonsensical entry.
 
-- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the bolsonarocoin.org server.
+- Upload zips and installers, as well as `SHA256SUMS.asc` from last step, to the mitocoin.org server.
 
-- Update bolsonarocoin.org version
+- Update mitocoin.org version
 
 - Announce the release:
 
-  - bolsonarocoin-dev mailing list
+  - mitocoin-dev mailing list
 
-  - Bolsonarocoin Core announcements list https://groups.google.com/forum/#!forum/bolsonarocoin-dev
+  - Mitocoin Core announcements list https://groups.google.com/forum/#!forum/mitocoin-dev
 
-  - blog.bolsonarocoin.org blog post
+  - blog.mitocoin.org blog post
 
-  - bolsonarocointalk.io forum announcement
+  - mitocointalk.io forum announcement
 
-  - Update title of #bolsonarocoin on Freenode IRC
+  - Update title of #mitocoin on Freenode IRC
 
-  - Optionally twitter, reddit /r/Bolsonarocoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/Mitocoin, ... but this will usually sort out itself
 
   - Add release notes for the new version to the directory `doc/release-notes` in git master
 

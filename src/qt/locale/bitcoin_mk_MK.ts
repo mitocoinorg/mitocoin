@@ -138,16 +138,16 @@
         <translation>Повторно индексирање на блокови од дискот...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Испрати Bolsonarocoin на Bolsonarocoin адреса</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Испрати Mitocoin на Mitocoin адреса</translation>
     </message>
     <message>
         <source>&amp;Verify message...</source>
         <translation>&amp;Потврди порака...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -600,8 +600,8 @@
         <translation>Опции:</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>Warning</source>

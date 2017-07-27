@@ -17,7 +17,7 @@ osx=true
 SIGNER=
 VERSION=
 commit=false
-url=https://github.com/bolsonarocoin-project/bolsonarocoin
+url=https://github.com/mitocoin-project/mitocoin
 proc=2
 mem=2000
 lxc=true
@@ -31,7 +31,7 @@ commitFiles=true
 read -d '' usage <<- EOF
 Usage: $scriptName [-c|u|v|b|s|B|o|h|j|m|] signer version
 
-Run this script from the directory containing the bitcoin, gitian-builder, gitian.sigs.ltc, and bolsonarocoin-detached-sigs.
+Run this script from the directory containing the bitcoin, gitian-builder, gitian.sigs.mmc, and mitocoin-detached-sigs.
 
 Arguments:
 signer          GPG signer to sign each build assert file
@@ -39,7 +39,7 @@ version		Version number, commit, or branch to build. If building a commit or bra
 
 Options:
 -c|--commit	Indicate that the version argument is for a commit or branch
--u|--url	Specify the URL of the repository. Default is https://github.com/bolsonarocoin-project/bolsonarocoin
+-u|--url	Specify the URL of the repository. Default is https://github.com/mitocoin-project/mitocoin
 -v|--verify 	Verify the gitian build
 -b|--build	Do a gitiain build
 -s|--sign	Make signed binaries for Windows and Mac OSX
@@ -232,8 +232,8 @@ echo ${COMMIT}
 if [[ $setup = true ]]
 then
     sudo apt-get install ruby apache2 git apt-cacher-ng python-vm-builder qemu-kvm qemu-utils
-    git clone https://github.com/bolsonarocoin-project/gitian.sigs.ltc.git
-    git clone https://github.com/bolsonarocoin-project/bolsonarocoin-detached-sigs.git
+    git clone https://github.com/mitocoin-project/gitian.sigs.mmc.git
+    git clone https://github.com/mitocoin-project/mitocoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     pushd ./gitian-builder
     if [[ -n "$USE_LXC" ]]
@@ -247,7 +247,7 @@ then
 fi
 
 # Set up build
-pushd ./bolsonarocoin
+pushd ./mitocoin
 git fetch
 git checkout ${COMMIT}
 popd
@@ -256,7 +256,7 @@ popd
 if [[ $build = true ]]
 then
 	# Make output folder
-	mkdir -p ./bolsonarocoin-binaries/${VERSION}
+	mkdir -p ./mitocoin-binaries/${VERSION}
 	
 	# Build Dependencies
 	echo ""
@@ -266,7 +266,7 @@ then
 	mkdir -p inputs
 	wget -N -P inputs $osslPatchUrl
 	wget -N -P inputs $osslTarUrl
-	make -C ../bolsonarocoin/depends download SOURCES_PATH=`pwd`/cache/common
+	make -C ../mitocoin/depends download SOURCES_PATH=`pwd`/cache/common
 
 	# Linux
 	if [[ $linux = true ]]
@@ -274,9 +274,9 @@ then
             echo ""
 	    echo "Compiling ${VERSION} Linux"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bolsonarocoin=${COMMIT} --url bolsonarocoin=${url} ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
-	    mv build/out/bolsonarocoin-*.tar.gz build/out/src/bolsonarocoin-*.tar.gz ../bolsonarocoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit mitocoin=${COMMIT} --url mitocoin=${url} ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
+	    mv build/out/mitocoin-*.tar.gz build/out/src/mitocoin-*.tar.gz ../mitocoin-binaries/${VERSION}
 	fi
 	# Windows
 	if [[ $windows = true ]]
@@ -284,10 +284,10 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bolsonarocoin=${COMMIT} --url bolsonarocoin=${url} ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
-	    mv build/out/bolsonarocoin-*-win-unsigned.tar.gz inputs/bolsonarocoin-win-unsigned.tar.gz
-	    mv build/out/bolsonarocoin-*.zip build/out/bolsonarocoin-*.exe ../bolsonarocoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit mitocoin=${COMMIT} --url mitocoin=${url} ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
+	    mv build/out/mitocoin-*-win-unsigned.tar.gz inputs/mitocoin-win-unsigned.tar.gz
+	    mv build/out/mitocoin-*.zip build/out/mitocoin-*.exe ../mitocoin-binaries/${VERSION}
 	fi
 	# Mac OSX
 	if [[ $osx = true ]]
@@ -295,20 +295,20 @@ then
 	    echo ""
 	    echo "Compiling ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -j ${proc} -m ${mem} --commit bolsonarocoin=${COMMIT} --url bolsonarocoin=${url} ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
-	    mv build/out/bolsonarocoin-*-osx-unsigned.tar.gz inputs/bolsonarocoin-osx-unsigned.tar.gz
-	    mv build/out/bolsonarocoin-*.tar.gz build/out/bolsonarocoin-*.dmg ../bolsonarocoin-binaries/${VERSION}
+	    ./bin/gbuild -j ${proc} -m ${mem} --commit mitocoin=${COMMIT} --url mitocoin=${url} ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
+	    mv build/out/mitocoin-*-osx-unsigned.tar.gz inputs/mitocoin-osx-unsigned.tar.gz
+	    mv build/out/mitocoin-*.tar.gz build/out/mitocoin-*.dmg ../mitocoin-binaries/${VERSION}
 	fi
 	popd
 
         if [[ $commitFiles = true ]]
         then
-	    # Commit to gitian.sigs.ltc repo
+	    # Commit to gitian.sigs.mmc repo
             echo ""
             echo "Committing ${VERSION} Unsigned Sigs"
             echo ""
-            pushd gitian.sigs.ltc
+            pushd gitian.sigs.mmc
             git add ${VERSION}-linux/${SIGNER}
             git add ${VERSION}-win-unsigned/${SIGNER}
             git add ${VERSION}-osx-unsigned/${SIGNER}
@@ -325,27 +325,27 @@ then
 	echo ""
 	echo "Verifying v${VERSION} Linux"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../bolsonarocoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-linux ../mitocoin/contrib/gitian-descriptors/gitian-linux.yml
 	# Windows
 	echo ""
 	echo "Verifying v${VERSION} Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../bolsonarocoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-win-unsigned ../mitocoin/contrib/gitian-descriptors/gitian-win.yml
 	# Mac OSX	
 	echo ""
 	echo "Verifying v${VERSION} Mac OSX"
 	echo ""	
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx.yml
+	./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-osx-unsigned ../mitocoin/contrib/gitian-descriptors/gitian-osx.yml
 	# Signed Windows
 	echo ""
 	echo "Verifying v${VERSION} Signed Windows"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-osx-signed ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
 	# Signed Mac OSX
 	echo ""
 	echo "Verifying v${VERSION} Signed Mac OSX"
 	echo ""
-	./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml	
+	./bin/gverify -v -d ../gitian.sigs.mmc/ -r ${VERSION}-osx-signed ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml	
 	popd
 fi
 
@@ -360,10 +360,10 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Windows"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../bolsonarocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-win-signer.yml
-	    mv build/out/bolsonarocoin-*win64-setup.exe ../bolsonarocoin-binaries/${VERSION}
-	    mv build/out/bolsonarocoin-*win32-setup.exe ../bolsonarocoin-binaries/${VERSION}
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../mitocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-win-signer.yml
+	    mv build/out/mitocoin-*win64-setup.exe ../mitocoin-binaries/${VERSION}
+	    mv build/out/mitocoin-*win32-setup.exe ../mitocoin-binaries/${VERSION}
 	fi
 	# Sign Mac OSX
 	if [[ $osx = true ]]
@@ -371,16 +371,16 @@ then
 	    echo ""
 	    echo "Signing ${VERSION} Mac OSX"
 	    echo ""
-	    ./bin/gbuild -i --commit signature=${COMMIT} ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../bolsonarocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-	    mv build/out/bolsonarocoin-osx-signed.dmg ../bolsonarocoin-binaries/${VERSION}/bolsonarocoin-${VERSION}-osx.dmg
+	    ./bin/gbuild -i --commit signature=${COMMIT} ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    ./bin/gsign -p $signProg --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.mmc/ ../mitocoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+	    mv build/out/mitocoin-osx-signed.dmg ../mitocoin-binaries/${VERSION}/mitocoin-${VERSION}-osx.dmg
 	fi
 	popd
 
         if [[ $commitFiles = true ]]
         then
             # Commit Sigs
-            pushd gitian.sigs.ltc
+            pushd gitian.sigs.mmc
             echo ""
             echo "Committing ${VERSION} Signed Sigs"
             echo ""

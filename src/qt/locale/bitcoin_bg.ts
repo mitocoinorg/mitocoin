@@ -166,8 +166,8 @@
         <translation>Повторно индексиране на блоковете на диска...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Изпращане към Bolsonarocoin адрес</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Изпращане към Mitocoin адрес</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -191,7 +191,7 @@
     </message>
     <message>
         <source>Bitcoin</source>
-        <translation>Bolsonarocoin</translation>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -218,12 +218,12 @@
         <translation>Шифроване на личните ключове,които принадлежат на портфейла Ви.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Пишете съобщения със своя Bolsonarocoin адрес за да докажете,че е ваш.</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Пишете съобщения със своя Mitocoin адрес за да докажете,че е ваш.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Bolsonarocoin адреси.</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Потвърждаване на съобщения  за да се знае,че са написани с дадените Mitocoin адреси.</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -242,8 +242,8 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Изискване на плащания(генерира QR кодове и Bolsonarocoin: URIs)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Изискване на плащания(генерира QR кодове и Mitocoin: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -254,16 +254,16 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Отворете Bolsonarocoin: URI  или заявка за плащане</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Отворете Mitocoin: URI  или заявка за плащане</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>&amp;Налични команди</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bolsonarocoin network</source>
-        <translation><numerusform>%n активна връзка към Bolsonarocoin мрежата</numerusform><numerusform>%n активни връзки към Bolsonarocoin мрежата</numerusform></translation>
+        <source>%n active connection(s) to Mitocoin network</source>
+        <translation><numerusform>%n активна връзка към Mitocoin мрежата</numerusform><numerusform>%n активни връзки към Mitocoin мрежата</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -330,8 +330,8 @@
         <translation>Синхронизиран</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bolsonarocoin command-line options</source>
-        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Bolsonarocoin команди</translation>
+        <source>Show the %1 help message to get a list with possible Mitocoin command-line options</source>
+        <translation>Покажи %1 помощно съобщение за да получиш лист с възможни Mitocoin команди</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -681,16 +681,16 @@
         <translation>&amp;Похарчете непотвърденото ресто</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отваряне на входящия Bolsonarocoin порт. Работи само с рутери поддържащи UPnP.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отваряне на входящия Mitocoin порт. Работи само с рутери поддържащи UPnP.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Отваряне на входящия порт чрез &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bolsonarocoin network through a SOCKS5 proxy.</source>
-        <translation>Свързване с Bolsonarocoin мрежата чрез SOCKS5  прокси.</translation>
+        <source>Connect to the Mitocoin network through a SOCKS5 proxy.</source>
+        <translation>Свързване с Mitocoin мрежата чрез SOCKS5  прокси.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -784,8 +784,8 @@
         <translation>Формуляр</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Bolsonarocoin, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Текущата информация на екрана може да не е актуална. Вашият портфейл ще се синхронизира автоматично с мрежата на Mitocoin, щом поне една връзката с нея се установи; този процес все още не е приключил.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -853,8 +853,8 @@
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a Bolsonarocoin address (e.g. %1)</source>
-        <translation>Въведете Bolsonarocoin адрес (например: %1)</translation>
+        <source>Enter a Mitocoin address (e.g. %1)</source>
+        <translation>Въведете Mitocoin адрес (например: %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1367,7 +1367,7 @@
         <translation>Копиране на текущия подпис</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
+        <source>Sign the message to prove you own this Mitocoin address</source>
         <translation>Подпишете съобщение като доказателство, че притежавате определен адрес</translation>
     </message>
     <message>
@@ -1383,8 +1383,8 @@
         <translation>&amp;Провери</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bolsonarocoin address</source>
-        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Bolsonarocoin адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified Mitocoin address</source>
+        <translation>Проверете съобщение, за да сте сигурни че е подписано с определен Mitocoin адрес</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -1434,7 +1434,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>bolsonarocoin-core</name>
+    <name>mitocoin-core</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>
@@ -1457,7 +1457,7 @@
     </message>
     <message>
         <source>Bitcoin Core</source>
-        <translation>Bolsonarocoin ядро</translation>
+        <translation>Mitocoin ядро</translation>
     </message>
     <message>
         <source>Whitelist peers connecting from the given netmask or IP address. Can be specified multiple times.</source>

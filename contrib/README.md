@@ -21,7 +21,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Bolsonarocoin network. This means one can have an always-on bolsonarocoind instance running, and another local bolsonarocoind/bolsonarocoin-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Mitocoin network. This means one can have an always-on mitocoind instance running, and another local mitocoind/mitocoin-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -30,26 +30,26 @@ Build Tools and Keys
 ---------------------
 
 ### [Debian](/contrib/debian) ###
-Contains files used to package bolsonarocoind/bolsonarocoin-qt
-for Debian-based Linux systems. If you compile bolsonarocoind/bolsonarocoin-qt yourself, there are some useful files here.
+Contains files used to package mitocoind/mitocoin-qt
+for Debian-based Linux systems. If you compile mitocoind/mitocoin-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
 Notes on getting Gitian builds up and running using KVM.
 
 ### [Gitian-keys](/contrib/gitian-keys)
-PGP keys used for signing Bolsonarocoin Core [Gitian release](/doc/release-process.md) results.
+PGP keys used for signing Mitocoin Core [Gitian release](/doc/release-process.md) results.
 
 ### [MacDeploy](/contrib/macdeploy) ###
 Scripts and notes for Mac builds. 
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building bolsonarocoin-core on RPM based distributions
+RPM spec file for building mitocoin-core on RPM based distributions
 
 Test and Verify Tools 
 ---------------------
 
 ### [TestGen](/contrib/testgen) ###
-Utilities to generate test vectors for the data-driven Bolsonarocoin tests.
+Utilities to generate test vectors for the data-driven Mitocoin tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from bolsonarocoin.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from mitocoin.org.

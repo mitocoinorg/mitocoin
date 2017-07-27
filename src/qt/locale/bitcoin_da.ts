@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>Vælg adresse at sende bolsonarocoins til</translation>
+        <translation>Vælg adresse at sende mitocoins til</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>Vælg adresse at modtage bolsonarocoins med</translation>
+        <translation>Vælg adresse at modtage mitocoins med</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>Modtagelsesadresser</translation>
     </message>
     <message>
-        <source>These are your Bolsonarocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Disse er dine Bolsonarocoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender bolsonarocoins.</translation>
+        <source>These are your Mitocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Disse er dine Mitocoin-adresser til afsendelse af betalinger. Tjek altid beløb og modtagelsesadresse, inden du sender mitocoins.</translation>
     </message>
     <message>
-        <source>These are your Bolsonarocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Dette er dine Bolsonarocoin-adresser til modtagelse af betalinger. Det anbefales at bruge en ny modtagelsesadresse for hver transaktion.</translation>
+        <source>These are your Mitocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Dette er dine Mitocoin-adresser til modtagelse af betalinger. Det anbefales at bruge en ny modtagelsesadresse for hver transaktion.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -180,8 +180,8 @@
         <translation>Tegnebog krypteret</translation>
     </message>
     <message>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bolsonarocoins from being stolen by malware infecting your computer.</source>
-        <translation>%1 vil nu lukke for at færdiggøre krypteringsprocessen. Husk at kryptering af din tegnebog kan ikke beskytte dine bolsonarocoin fuldt ud mod at blive stjålet af eventuel malware, der måtte have inficeret din computer.</translation>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mitocoins from being stolen by malware infecting your computer.</source>
+        <translation>%1 vil nu lukke for at færdiggøre krypteringsprocessen. Husk at kryptering af din tegnebog kan ikke beskytte dine mitocoin fuldt ud mod at blive stjålet af eventuel malware, der måtte have inficeret din computer.</translation>
     </message>
     <message>
         <source>IMPORTANT: Any previous backups you have made of your wallet file should be replaced with the newly generated, encrypted wallet file. For security reasons, previous backups of the unencrypted wallet file will become useless as soon as you start using the new, encrypted wallet.</source>
@@ -322,8 +322,8 @@
         <translation>Genindekserer blokke på disken…</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Send bolsonarocoins til en Bolsonarocoin-adresse</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Send mitocoins til en Mitocoin-adresse</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -346,8 +346,8 @@
         <translation>&amp;Verificér besked…</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -374,12 +374,12 @@
         <translation>Kryptér de private nøgler, der hører til din tegnebog</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Signér beskeder med dine Bolsonarocoin-adresser for at bevise, at de tilhører dig</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Signér beskeder med dine Mitocoin-adresser for at bevise, at de tilhører dig</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Verificér beskeder for at sikre, at de er signeret med de angivne Bolsonarocoin-adresser</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Verificér beskeder for at sikre, at de er signeret med de angivne Mitocoin-adresser</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -398,8 +398,8 @@
         <translation>Faneværktøjslinje</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Anmod om betalinger (genererer QR-koder og "bolsonarocoin:"-URI'er)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Anmod om betalinger (genererer QR-koder og "mitocoin:"-URI'er)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -410,16 +410,16 @@
         <translation>Vis listen over brugte modtagelsesadresser og -mærkater</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Åbn en "bolsonarocoin:"-URI eller betalingsanmodning</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Åbn en "mitocoin:"-URI eller betalingsanmodning</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Tilvalg for &amp;kommandolinje</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bolsonarocoin network</source>
-        <translation><numerusform>%n aktiv forbindelse til Bolsonarocoin-netværket</numerusform><numerusform>%n aktive forbindelser til Bolsonarocoin-netværket</numerusform></translation>
+        <source>%n active connection(s) to Mitocoin network</source>
+        <translation><numerusform>%n aktiv forbindelse til Mitocoin-netværket</numerusform><numerusform>%n aktive forbindelser til Mitocoin-netværket</numerusform></translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -486,8 +486,8 @@
         <translation>Opdateret</translation>
     </message>
     <message>
-        <source>Show the %1 help message to get a list with possible Bolsonarocoin command-line options</source>
-        <translation>Vis %1 hjælpebesked for at få en liste over mulige tilvalg for Bolsonarocoin kommandolinje</translation>
+        <source>Show the %1 help message to get a list with possible Mitocoin command-line options</source>
+        <translation>Vis %1 hjælpebesked for at få en liste over mulige tilvalg for Mitocoin kommandolinje</translation>
     </message>
     <message>
         <source>%1 client</source>
@@ -806,8 +806,8 @@
         <translation>Redigér afsendelsesadresse</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid Bolsonarocoin address.</source>
-        <translation>Den indtastede adresse "%1" er ikke en gyldig Bolsonarocoin-adresse.</translation>
+        <source>The entered address "%1" is not a valid Mitocoin address.</source>
+        <translation>Den indtastede adresse "%1" er ikke en gyldig Mitocoin-adresse.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -915,8 +915,8 @@
         <translation>Siden dette er første gang, programmet startes, kan du vælge, hvor %1 skal gemme sin data.</translation>
     </message>
     <message>
-        <source>%1 will download and store a copy of the Bolsonarocoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>%1 vil downloade og gemme et kopi af Bolsonarocoin-blokkæden. Mindst %2 GB data vil blive gemt i denne mappe, og den vil vokse over tid. Tegnebogen vil også blive gemt i denne mappe.</translation>
+        <source>%1 will download and store a copy of the Mitocoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>%1 vil downloade og gemme et kopi af Mitocoin-blokkæden. Mindst %2 GB data vil blive gemt i denne mappe, og den vil vokse over tid. Tegnebogen vil også blive gemt i denne mappe.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1061,16 +1061,16 @@
         <translation>&amp;Brug ubekræftede byttepenge</translation>
     </message>
     <message>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Åbn automatisk Bolsonarocoin-klientens port på routeren. Dette virker kun, når din router understøtter UPnP, og UPnP er aktiveret.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Åbn automatisk Mitocoin-klientens port på routeren. Dette virker kun, når din router understøtter UPnP, og UPnP er aktiveret.</translation>
     </message>
     <message>
         <source>Map port using &amp;UPnP</source>
         <translation>Konfigurér port vha. &amp;UPnP</translation>
     </message>
     <message>
-        <source>Connect to the Bolsonarocoin network through a SOCKS5 proxy.</source>
-        <translation>Forbind til Bolsonarocoin-netværket gennem en SOCKS5-proxy.</translation>
+        <source>Connect to the Mitocoin network through a SOCKS5 proxy.</source>
+        <translation>Forbind til Mitocoin-netværket gennem en SOCKS5-proxy.</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
@@ -1109,8 +1109,8 @@
         <translation>Tor</translation>
     </message>
     <message>
-        <source>Connect to the Bolsonarocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
-        <translation>Forbind til Bolsonarocoin-netværket gennem en separat SOCKS5-proxy for skjulte Tor-tjenester.</translation>
+        <source>Connect to the Mitocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <translation>Forbind til Mitocoin-netværket gennem en separat SOCKS5-proxy for skjulte Tor-tjenester.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services:</source>
@@ -1158,7 +1158,7 @@
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af bolsonarocoins.</translation>
+        <translation>Vælg standard for underopdeling af enhed, som skal vises i brugergrænsefladen og ved afsendelse af mitocoins.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1208,8 +1208,8 @@
         <translation>Formular</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Bolsonarocoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Den viste information kan være forældet. Din tegnebog synkroniserer automatisk med Mitocoin-netværket, når en forbindelse etableres, men denne proces er ikke gennemført endnu.</translation>
     </message>
     <message>
         <source>Watch-only:</source>
@@ -1283,8 +1283,8 @@
         <translation>Fejl i betalingsanmodning</translation>
     </message>
     <message>
-        <source>Cannot start bolsonarocoin: click-to-pay handler</source>
-        <translation>Kan ikke starte bolsonarocoin: click-to-pay-håndtering</translation>
+        <source>Cannot start mitocoin: click-to-pay handler</source>
+        <translation>Kan ikke starte mitocoin: click-to-pay-håndtering</translation>
     </message>
     <message>
         <source>URI handling</source>
@@ -1299,8 +1299,8 @@
         <translation>Ugyldig betalingsadresse %1</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid Bolsonarocoin address or malformed URI parameters.</source>
-        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig Bolsonarocoin-adresse eller forkert udformede URL-parametre.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid Mitocoin address or malformed URI parameters.</source>
+        <translation>URI kan ikke tolkes! Dette kan skyldes en ugyldig Mitocoin-adresse eller forkert udformede URL-parametre.</translation>
     </message>
     <message>
         <source>Payment request file handling</source>
@@ -1389,8 +1389,8 @@
         <translation>Beløb</translation>
     </message>
     <message>
-        <source>Enter a Bolsonarocoin address (e.g. %1)</source>
-        <translation>Indtast en Bolsonarocoin-adresse (fx %1)</translation>
+        <source>Enter a Mitocoin address (e.g. %1)</source>
+        <translation>Indtast en Mitocoin-adresse (fx %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1754,8 +1754,8 @@
         <translation>&amp;Genbrug en eksisterende modtagelsesadresse (anbefales ikke)</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bolsonarocoin network.</source>
-        <translation>En valgfri besked, der føjes til betalingsanmodningen, og som vil vises, når anmodningen åbnes. Bemærk: Beskeden vil ikke sendes sammen med betalingen over Bolsonarocoin-netværket.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Mitocoin network.</source>
+        <translation>En valgfri besked, der føjes til betalingsanmodningen, og som vil vises, når anmodningen åbnes. Bemærk: Beskeden vil ikke sendes sammen med betalingen over Mitocoin-netværket.</translation>
     </message>
     <message>
         <source>An optional label to associate with the new receiving address.</source>
@@ -1904,7 +1904,7 @@
     <name>SendCoinsDialog</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send bolsonarocoins</translation>
+        <translation>Send mitocoins</translation>
     </message>
     <message>
         <source>Coin Control Features</source>
@@ -1987,8 +1987,8 @@
         <translation>total mindst</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bolsonarocoin transactions than the network can process.</source>
-        <translation>Det er helt fint kun at betale det minimale gebyr, så længe den totale transaktionsvolumen er mindre end den plads, der er tilgængelig i blokkene. Men vær opmærksom på, at dette kan ende ud i transaktioner, der aldrig bliver bekræftet, når der bliver større forespørgsel efter bolsonarocoin-transaktioner, end hvad netværket kan bearbejde.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for mitocoin transactions than the network can process.</source>
+        <translation>Det er helt fint kun at betale det minimale gebyr, så længe den totale transaktionsvolumen er mindre end den plads, der er tilgængelig i blokkene. Men vær opmærksom på, at dette kan ende ud i transaktioner, der aldrig bliver bekræftet, når der bliver større forespørgsel efter mitocoin-transaktioner, end hvad netværket kan bearbejde.</translation>
     </message>
     <message>
         <source>(read the tooltip)</source>
@@ -2104,7 +2104,7 @@
     </message>
     <message>
         <source>Confirm send coins</source>
-        <translation>Bekræft afsendelse af bolsonarocoins</translation>
+        <translation>Bekræft afsendelse af mitocoins</translation>
     </message>
     <message>
         <source>The recipient address is not valid. Please recheck.</source>
@@ -2132,7 +2132,7 @@
     </message>
     <message>
         <source>The transaction was rejected! This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
-        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af dine bolsonarocoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine bolsonarocoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
+        <translation>Transaktionen blev afvist! Dette kan ske, hvis nogle af dine mitocoins i din tegnebog allerede er brugt, som hvis du brugte en kopi af wallet.dat og dine mitocoins er blevet brugt i kopien, men ikke er markeret som brugt her.</translation>
     </message>
     <message>
         <source>A fee higher than %1 is considered an absurdly high fee.</source>
@@ -2151,8 +2151,8 @@
         <translation><numerusform>Bekræftelse estimeret til at begynde inden for %n blok.</numerusform><numerusform>Bekræftelse estimeret til at begynde inden for %n blokke.</numerusform></translation>
     </message>
     <message>
-        <source>Warning: Invalid Bolsonarocoin address</source>
-        <translation>Advarsel: Ugyldig Bolsonarocoin-adresse</translation>
+        <source>Warning: Invalid Mitocoin address</source>
+        <translation>Advarsel: Ugyldig Mitocoin-adresse</translation>
     </message>
     <message>
         <source>Warning: Unknown change address</source>
@@ -2186,8 +2186,8 @@
         <translation>Dette er en normal betaling.</translation>
     </message>
     <message>
-        <source>The Bolsonarocoin address to send the payment to</source>
-        <translation>Bolsonarocoin-adresse, som betalingen skal sendes til</translation>
+        <source>The Mitocoin address to send the payment to</source>
+        <translation>Mitocoin-adresse, som betalingen skal sendes til</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -2206,8 +2206,8 @@
         <translation>Fjern denne indgang</translation>
     </message>
     <message>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bolsonarocoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
-        <translation>Gebyret vil blive trukket fra det sendte beløb. Modtageren vil modtage færre bolsonarocoin, end du indtaster i beløbfeltet. Hvis flere modtagere vælges, vil gebyret deles ligeligt.</translation>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less mitocoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <translation>Gebyret vil blive trukket fra det sendte beløb. Modtageren vil modtage færre mitocoin, end du indtaster i beløbfeltet. Hvis flere modtagere vælges, vil gebyret deles ligeligt.</translation>
     </message>
     <message>
         <source>S&amp;ubtract fee from amount</source>
@@ -2230,8 +2230,8 @@
         <translation>Indtast et mærkat for denne adresse for at føje den til listen over brugte adresser</translation>
     </message>
     <message>
-        <source>A message that was attached to the bolsonarocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bolsonarocoin network.</source>
-        <translation>En besked, som blev føjet til "bitcon:"-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Bolsonarocoin-netværket.</translation>
+        <source>A message that was attached to the mitocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Mitocoin network.</source>
+        <translation>En besked, som blev føjet til "bitcon:"-URI'en, som vil gemmes med transaktionen til din reference. Bemærk: Denne besked vil ikke blive sendt over Mitocoin-netværket.</translation>
     </message>
     <message>
         <source>Pay To:</source>
@@ -2275,12 +2275,12 @@
         <translation>&amp;Singér besked</translation>
     </message>
     <message>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bolsonarocoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
-        <translation>Du kan signere beskeder/aftaler med dine adresser for at bevise, at du kan modtage bolsonarocoin, der bliver sendt til adresserne. Vær forsigtig med ikke at signere noget vagt eller tilfældigt, da eventuelle phishing-angreb kan snyde dig til at overlade din identitet til dem. Signér kun fuldt ud detaljerede udsagn, som du er enig i.</translation>
+        <source>You can sign messages/agreements with your addresses to prove you can receive mitocoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <translation>Du kan signere beskeder/aftaler med dine adresser for at bevise, at du kan modtage mitocoin, der bliver sendt til adresserne. Vær forsigtig med ikke at signere noget vagt eller tilfældigt, da eventuelle phishing-angreb kan snyde dig til at overlade din identitet til dem. Signér kun fuldt ud detaljerede udsagn, som du er enig i.</translation>
     </message>
     <message>
-        <source>The Bolsonarocoin address to sign the message with</source>
-        <translation>Bolsonarocoin-adresse, som beskeden skal signeres med</translation>
+        <source>The Mitocoin address to sign the message with</source>
+        <translation>Mitocoin-adresse, som beskeden skal signeres med</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2311,8 +2311,8 @@
         <translation>Kopiér den nuværende signatur til systemets udklipsholder</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
-        <translation>Signér denne besked for at bevise, at Bolsonarocoin-adressen tilhører dig</translation>
+        <source>Sign the message to prove you own this Mitocoin address</source>
+        <translation>Signér denne besked for at bevise, at Mitocoin-adressen tilhører dig</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2335,12 +2335,12 @@
         <translation>Indtast modtagerens adresse, besked (vær sikker på at kopiere linjeskift, mellemrum, tabuleringer, etc. præcist) og signatur herunder for at verificere beskeden. Vær forsigtig med ikke at læse noget ud fra signaturen, som ikke står i selve beskeden, for at undgå at blive snydt af et eventuelt man-in-the-middle-angreb. Bemærk, at dette kun beviser, at den signerende person kan modtage med adressen; det kan ikke bevise hvem der har sendt en given transaktion!</translation>
     </message>
     <message>
-        <source>The Bolsonarocoin address the message was signed with</source>
-        <translation>Bolsonarocoin-adressen, som beskeden blev signeret med</translation>
+        <source>The Mitocoin address the message was signed with</source>
+        <translation>Mitocoin-adressen, som beskeden blev signeret med</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified Bolsonarocoin address</source>
-        <translation>Verificér beskeden for at sikre, at den er signeret med den angivne Bolsonarocoin-adresse</translation>
+        <source>Verify the message to ensure it was signed with the specified Mitocoin address</source>
+        <translation>Verificér beskeden for at sikre, at den er signeret med den angivne Mitocoin-adresse</translation>
     </message>
     <message>
         <source>Verify &amp;Message</source>
@@ -2561,7 +2561,7 @@
     </message>
     <message>
         <source>Generated coins must mature %1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to "not accepted" and it won't be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Minede bolsonarocoins skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til "ikke accepteret", og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
+        <translation>Minede mitocoins skal modne %1 blokke, før de kan bruges. Da du genererede denne blok, blev den transmitteret til netværket for at blive føjet til blokkæden. Hvis det ikke lykkes at få den i kæden, vil dens tilstand ændres til "ikke accepteret", og den vil ikke kunne bruges. Dette kan ske nu og da, hvis en anden knude udvinder en blok inden for nogle få sekunder fra din.</translation>
     </message>
     <message>
         <source>Debug information</source>
@@ -2887,7 +2887,7 @@
     <name>WalletModel</name>
     <message>
         <source>Send Coins</source>
-        <translation>Send bolsonarocoins</translation>
+        <translation>Send mitocoins</translation>
     </message>
 </context>
 <context>
@@ -2992,8 +2992,8 @@
         <translation>Acceptér forbindelser udefra (standard: 1 hvis hverken -proxy eller -connect)</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>The %s developers</source>

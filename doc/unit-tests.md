@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with `make check`.
 
-To run the bolsonarocoind tests manually, launch `src/test/test_bolsonarocoin`.
+To run the mitocoind tests manually, launch `src/test/test_mitocoin`.
 
-To add more bolsonarocoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more mitocoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the `test/` directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the bolsonarocoin-qt tests manually, launch `src/qt/test/test_bolsonarocoin-qt`
+To run the mitocoin-qt tests manually, launch `src/qt/test/test_mitocoin-qt`
 
-To add more bolsonarocoin-qt tests, add them to the `src/qt/test/` directory and
+To add more mitocoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

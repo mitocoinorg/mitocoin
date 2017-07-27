@@ -158,8 +158,8 @@
         <translation>Besig met herindeksering van blokke op hardeskyf...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Stuur munte na 'n Bolsonarocoin adres</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Stuur munte na 'n Mitocoin adres</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Verander die wagwoord wat ek vir kodifikasie van my beursie gebruik</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -194,12 +194,12 @@
         <translation>Kodifiseer die private sleutes wat aan jou beursie gekoppel is.</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Onderteken boodskappe met u Bolsonarocoin adresse om u eienaarskap te bewys</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Onderteken boodskappe met u Mitocoin adresse om u eienaarskap te bewys</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Bolsonarocoin adresse</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Verifieër boodskappe om seker te maak dat dit met die gespesifiseerde Mitocoin adresse</translation>
     </message>
     <message>
         <source>&amp;Help</source>
@@ -210,8 +210,8 @@
         <translation>Orebalk</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Versoek betalings (genereer QR-kodes en bolsonarocoin: URI's)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Versoek betalings (genereer QR-kodes en mitocoin: URI's)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -222,8 +222,8 @@
         <translation>Vertoon die lys van gebruikte ontvangers-adresse en etikette</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Skep 'n bolsonarocoin: URI of betalingsversoek</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Skep 'n mitocoin: URI of betalingsversoek</translation>
     </message>
     <message>
         <source>Indexing blocks on disk...</source>
@@ -710,8 +710,8 @@
 <context>
     <name>bitcoin-core</name>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Kern</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Kern</translation>
     </message>
     <message>
         <source>Information</source>

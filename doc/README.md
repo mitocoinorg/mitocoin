@@ -1,39 +1,39 @@
-Bolsonarocoin Core 0.13.2
+Mitocoin Core 0.13.2
 =====================
 
 Setup
 ---------------------
-[Bolsonarocoin Core](http://bolsonarocoin.org/en/download) is the original Bolsonarocoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Bolsonarocoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+[Mitocoin Core](http://mitocoin.org/en/download) is the original Mitocoin client and it builds the backbone of the network. However, it downloads and stores the entire history of Mitocoin transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 Running
 ---------------------
-The following are some helpful notes on how to run Bolsonarocoin on your native platform.
+The following are some helpful notes on how to run Mitocoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- `bin/bolsonarocoin-qt` (GUI) or
-- `bin/bolsonarocoind` (headless)
+- `bin/mitocoin-qt` (GUI) or
+- `bin/mitocoind` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run bolsonarocoin-qt.exe.
+Unpack the files into a directory, and then run mitocoin-qt.exe.
 
 ### OS X
 
-Drag Bolsonarocoin-Core to your applications folder, and then run Bolsonarocoin-Core.
+Drag Mitocoin-Core to your applications folder, and then run Mitocoin-Core.
 
 ### Need Help?
 
-* See the documentation at the [Bolsonarocoin Wiki](https://bolsonarocoin.info/)
+* See the documentation at the [Mitocoin Wiki](https://mitocoin.info/)
 for help and more information.
-* Ask for help on [#bolsonarocoin](http://webchat.freenode.net?channels=bolsonarocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=bolsonarocoin).
-* Ask for help on the [BolsonarocoinTalk](https://bolsonarocointalk.io/) forums.
+* Ask for help on [#mitocoin](http://webchat.freenode.net?channels=mitocoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=mitocoin).
+* Ask for help on the [MitocoinTalk](https://mitocointalk.io/) forums.
 
 Building
 ---------------------
-The following are developer notes on how to build Bolsonarocoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build Mitocoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OS X Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -43,7 +43,7 @@ The following are developer notes on how to build Bolsonarocoin on your native p
 
 Development
 ---------------------
-The Bolsonarocoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
+The Mitocoin repo's [root README](/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -60,8 +60,8 @@ The Bolsonarocoin repo's [root README](/README.md) contains relevant information
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [BolsonarocoinTalk](https://bolsonarocointalk.io/) forums.
-* Discuss project-specific development on #bolsonarocoin on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=bolsonarocoin).
+* Discuss on the [MitocoinTalk](https://mitocointalk.io/) forums.
+* Discuss project-specific development on #mitocoin on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=mitocoin).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

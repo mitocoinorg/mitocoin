@@ -2,10 +2,10 @@
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-TESTS += test/test_bolsonarocoin
-bin_PROGRAMS += test/test_bolsonarocoin
+TESTS += test/test_mitocoin
+bin_PROGRAMS += test/test_mitocoin
 TEST_SRCDIR = test
-TEST_BINARY=test/test_bolsonarocoin$(EXEEXT)
+TEST_BINARY=test/test_mitocoin$(EXEEXT)
 
 
 EXTRA_DIST += \
@@ -104,23 +104,23 @@ BITCOIN_TESTS += \
   wallet/test/rpc_wallet_tests.cpp
 endif
 
-test_test_bolsonarocoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
-test_test_bolsonarocoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
-test_test_bolsonarocoin_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
+test_test_mitocoin_SOURCES = $(BITCOIN_TESTS) $(JSON_TEST_FILES) $(RAW_TEST_FILES)
+test_test_mitocoin_CPPFLAGS = $(AM_CPPFLAGS) $(BITCOIN_INCLUDES) -I$(builddir)/test/ $(TESTDEFS)
+test_test_mitocoin_LDADD = $(LIBBITCOIN_SERVER) $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CONSENSUS) $(LIBBITCOIN_CRYPTO) $(LIBUNIVALUE) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(BOOST_UNIT_TEST_FRAMEWORK_LIB) $(LIBSECP256K1)
-test_test_bolsonarocoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
+test_test_mitocoin_CXXFLAGS = $(AM_CXXFLAGS) $(PIE_FLAGS)
 if ENABLE_WALLET
-test_test_bolsonarocoin_LDADD += $(LIBBITCOIN_WALLET)
+test_test_mitocoin_LDADD += $(LIBBITCOIN_WALLET)
 endif
 
-test_test_bolsonarocoin_LDADD += $(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
-test_test_bolsonarocoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
+test_test_mitocoin_LDADD += $(LIBBITCOIN_CONSENSUS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS)
+test_test_mitocoin_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS) -static
 
 if ENABLE_ZMQ
-test_test_bolsonarocoin_LDADD += $(ZMQ_LIBS)
+test_test_mitocoin_LDADD += $(ZMQ_LIBS)
 endif
 
-nodist_test_test_bolsonarocoin_SOURCES = $(GENERATED_TEST_FILES)
+nodist_test_test_mitocoin_SOURCES = $(GENERATED_TEST_FILES)
 
 $(BITCOIN_TESTS): $(GENERATED_TEST_FILES)
 

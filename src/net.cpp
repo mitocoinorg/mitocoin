@@ -1409,7 +1409,7 @@ void ThreadMapPort()
             }
         }
 
-        std::string strDesc = "Bolsonarocoin " + FormatFullVersion();
+        std::string strDesc = "Mitocoin " + FormatFullVersion();
 
         try {
             while (true) {

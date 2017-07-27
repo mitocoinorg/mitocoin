@@ -146,8 +146,8 @@
         <translation>Пераіндэксацыя блокаў на дыску...</translation>
     </message>
     <message>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Даслаць манеты на Bolsonarocoin-адрас</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Даслаць манеты на Mitocoin-адрас</translation>
     </message>
     <message>
         <source>Backup wallet to another location</source>
@@ -170,8 +170,8 @@
         <translation>Праверыць паведамленне...</translation>
     </message>
     <message>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <source>Wallet</source>
@@ -198,12 +198,12 @@
         <translation>Зашыфраваць прыватныя ключы, якия належаць вашаму гаманцу</translation>
     </message>
     <message>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Падпісаць паведамленне з дапамогай Bolsonarocoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Падпісаць паведамленне з дапамогай Mitocoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Спраўдзіць паведамленне з дапамогай Bolsonarocoin-адраса каб даказаць, што яно належыць вам</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Спраўдзіць паведамленне з дапамогай Mitocoin-адраса каб даказаць, што яно належыць вам</translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -218,8 +218,8 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
-        <translation>Запатрабаваць плацёж (генеруецца QR-код для Bolsonarocoin URI)</translation>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
+        <translation>Запатрабаваць плацёж (генеруецца QR-код для Mitocoin URI)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -230,16 +230,16 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a bolsonarocoin: URI or payment request</source>
-        <translation>Адкрыць Bolsonarocoin: URI ці запыт плацяжу</translation>
+        <source>Open a mitocoin: URI or payment request</source>
+        <translation>Адкрыць Mitocoin: URI ці запыт плацяжу</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>
         <translation>Опцыі каманднага радка</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to Bolsonarocoin network</source>
-        <translation><numerusform>%n актыўнае злучэнне з сецівам Bolsonarocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Bolsonarocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Bolsonarocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Bolsonarocoin</numerusform></translation>
+        <source>%n active connection(s) to Mitocoin network</source>
+        <translation><numerusform>%n актыўнае злучэнне з сецівам Mitocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Mitocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Mitocoin</numerusform><numerusform>%n актыўных злучэнняў з сецівам Mitocoin</numerusform></translation>
     </message>
     <message>
         <source>No block source available...</source>
@@ -736,8 +736,8 @@
         <translation>Запусціць у фоне як дэман і прымаць каманды</translation>
     </message>
     <message>
-        <source>Bolsonarocoin Core</source>
-        <translation>Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation>Mitocoin Core</translation>
     </message>
     <message>
         <source>Do you want to rebuild the block database now?</source>

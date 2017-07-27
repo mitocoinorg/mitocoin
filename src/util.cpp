@@ -99,8 +99,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "bolsonarocoin.conf";
-const char * const BITCOIN_PID_FILENAME = "bolsonarocoin.pid";
+const char * const BITCOIN_CONF_FILENAME = "mitocoin.conf";
+const char * const BITCOIN_PID_FILENAME = "mitocoin.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -435,7 +435,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "bolsonarocoin";
+    const char* pszModule = "mitocoin";
 #endif
     if (pex)
         return strprintf(
@@ -461,7 +461,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.bitcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Bolsonarocoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Mitocoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -471,10 +471,10 @@ boost::filesystem::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Bolsonarocoin";
+    return pathRet / "Library/Application Support/Mitocoin";
 #else
     // Unix
-    return pathRet / ".bolsonarocoin";
+    return pathRet / ".mitocoin";
 #endif
 #endif
 }

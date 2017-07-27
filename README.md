@@ -1,17 +1,17 @@
-Bolsonarocoin Core integration/staging tree
+Mitocoin Core integration/staging tree
 =====================================
 
 
 https://
 
-What is Bolsonarocoin?
+What is Mitocoin?
 ----------------
 
-Bolsonarocoin is an experimental test digital currency based on LiteCoin version 0,13.
+Mitocoin is an experimental test digital currency based on LiteCoin version 0,13.
 It keeps all its main characteristics creating just a new genesis block, and some small modifications.
 
 For more information, as well as an immediately useable, binary version of
-the Bolsonarocoin Core software, see [https://.
+the Mitocoin Core software, see [https://.
 
 License
 -------

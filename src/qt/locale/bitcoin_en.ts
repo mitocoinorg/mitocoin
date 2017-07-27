@@ -80,12 +80,12 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Bolsonarocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Mitocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Bolsonarocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <source>These are your Mitocoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -227,7 +227,7 @@
     </message>
     <message>
         <location line="-56"/>
-        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your bolsonarocoins from being stolen by malware infecting your computer.</source>
+        <source>%1 will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your mitocoins from being stolen by malware infecting your computer.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -410,8 +410,8 @@
     </message>
     <message>
         <location line="-463"/>
-        <source>Send coins to a Bolsonarocoin address</source>
-        <translation>Send coins to a Bolsonarocoin address</translation>
+        <source>Send coins to a Mitocoin address</source>
+        <translation>Send coins to a Mitocoin address</translation>
     </message>
     <message>
         <location line="+67"/>
@@ -440,8 +440,8 @@
     </message>
     <message>
         <location line="+487"/>
-        <source>Bolsonarocoin</source>
-        <translation>Bolsonarocoin</translation>
+        <source>Mitocoin</source>
+        <translation>Mitocoin</translation>
     </message>
     <message>
         <location line="-699"/>
@@ -475,13 +475,13 @@
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Bolsonarocoin addresses to prove you own them</source>
-        <translation>Sign messages with your Bolsonarocoin addresses to prove you own them</translation>
+        <source>Sign messages with your Mitocoin addresses to prove you own them</source>
+        <translation>Sign messages with your Mitocoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Bolsonarocoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Mitocoin addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Mitocoin addresses</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -505,7 +505,7 @@
     </message>
     <message>
         <location line="-158"/>
-        <source>Request payments (generates QR codes and bolsonarocoin: URIs)</source>
+        <source>Request payments (generates QR codes and mitocoin: URIs)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -520,7 +520,7 @@
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a bolsonarocoin: URI or payment request</source>
+        <source>Open a mitocoin: URI or payment request</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -530,10 +530,10 @@
     </message>
     <message numerus="yes">
         <location line="+347"/>
-        <source>%n active connection(s) to Bolsonarocoin network</source>
+        <source>%n active connection(s) to Mitocoin network</source>
         <translation>
-            <numerusform>%n active connection to Bolsonarocoin network</numerusform>
-            <numerusform>%n active connections to Bolsonarocoin network</numerusform>
+            <numerusform>%n active connection to Mitocoin network</numerusform>
+            <numerusform>%n active connections to Mitocoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -634,7 +634,7 @@
     </message>
     <message>
         <location line="-394"/>
-        <source>Show the %1 help message to get a list with possible Bolsonarocoin command-line options</source>
+        <source>Show the %1 help message to get a list with possible Mitocoin command-line options</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1028,7 +1028,7 @@
     </message>
     <message>
         <location line="+71"/>
-        <source>The entered address &quot;%1&quot; is not a valid Bolsonarocoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Mitocoin address.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1163,7 +1163,7 @@
     </message>
     <message>
         <location line="+10"/>
-        <source>%1 will download and store a copy of the Bolsonarocoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <source>%1 will download and store a copy of the Mitocoin block chain. At least %2GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1352,8 +1352,8 @@
     </message>
     <message>
         <location line="+30"/>
-        <source>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Bolsonarocoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Mitocoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1362,7 +1362,7 @@
     </message>
     <message>
         <location line="+17"/>
-        <source>Connect to the Bolsonarocoin network through a SOCKS5 proxy.</source>
+        <source>Connect to the Mitocoin network through a SOCKS5 proxy.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1417,7 +1417,7 @@
     </message>
     <message>
         <location line="+25"/>
-        <source>Connect to the Bolsonarocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
+        <source>Connect to the Mitocoin network through a separate SOCKS5 proxy for Tor hidden services.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1542,8 +1542,8 @@
     <message>
         <location line="+62"/>
         <location line="+386"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Bolsonarocoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Mitocoin network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-139"/>
@@ -1640,7 +1640,7 @@
     </message>
     <message>
         <location line="-402"/>
-        <source>Cannot start bolsonarocoin: click-to-pay handler</source>
+        <source>Cannot start mitocoin: click-to-pay handler</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1662,7 +1662,7 @@
     </message>
     <message>
         <location line="+8"/>
-        <source>URI cannot be parsed! This can be caused by an invalid Bolsonarocoin address or malformed URI parameters.</source>
+        <source>URI cannot be parsed! This can be caused by an invalid Mitocoin address or malformed URI parameters.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1779,7 +1779,7 @@
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+135"/>
-        <source>Enter a Bolsonarocoin address (e.g. %1)</source>
+        <source>Enter a Mitocoin address (e.g. %1)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2272,7 +2272,7 @@
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bolsonarocoin network.</source>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Mitocoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2566,7 +2566,7 @@
     <message>
         <location line="+30"/>
         <location line="+13"/>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for bolsonarocoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks. But be aware that this can end up in a never confirming transaction once there is more demand for mitocoin transactions than the network can process.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2777,7 +2777,7 @@
     </message>
     <message>
         <location line="+106"/>
-        <source>Warning: Invalid Bolsonarocoin address</source>
+        <source>Warning: Invalid Mitocoin address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2822,7 +2822,7 @@
     </message>
     <message>
         <location line="+39"/>
-        <source>The Bolsonarocoin address to send the payment to</source>
+        <source>The Mitocoin address to send the payment to</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2849,7 +2849,7 @@
     </message>
     <message>
         <location line="-1021"/>
-        <source>The fee will be deducted from the amount being sent. The recipient will receive less bolsonarocoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
+        <source>The fee will be deducted from the amount being sent. The recipient will receive less mitocoins than you enter in the amount field. If multiple recipients are selected, the fee is split equally.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2879,7 +2879,7 @@
     </message>
     <message>
         <location line="+47"/>
-        <source>A message that was attached to the bolsonarocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bolsonarocoin network.</source>
+        <source>A message that was attached to the mitocoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Mitocoin network.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2936,12 +2936,12 @@
     </message>
     <message>
         <location line="+6"/>
-        <source>You can sign messages/agreements with your addresses to prove you can receive bolsonarocoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
+        <source>You can sign messages/agreements with your addresses to prove you can receive mitocoins sent to them. Be careful not to sign anything vague or random, as phishing attacks may try to trick you into signing your identity over to them. Only sign fully-detailed statements you agree to.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
-        <source>The Bolsonarocoin address to sign the message with</source>
+        <source>The Mitocoin address to sign the message with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2983,8 +2983,8 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Bolsonarocoin address</source>
-        <translation>Sign the message to prove you own this Bolsonarocoin address</translation>
+        <source>Sign the message to prove you own this Mitocoin address</source>
+        <translation>Sign the message to prove you own this Mitocoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3014,13 +3014,13 @@
     </message>
     <message>
         <location line="+21"/>
-        <source>The Bolsonarocoin address the message was signed with</source>
+        <source>The Mitocoin address the message was signed with</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Bolsonarocoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Bolsonarocoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Mitocoin address</source>
+        <translation>Verify the message to ensure it was signed with the specified Mitocoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3860,8 +3860,8 @@
     </message>
     <message>
         <location line="-211"/>
-        <source>Bolsonarocoin Core</source>
-        <translation type="unfinished">Bolsonarocoin Core</translation>
+        <source>Mitocoin Core</source>
+        <translation type="unfinished">Mitocoin Core</translation>
     </message>
     <message>
         <location line="+1"/>

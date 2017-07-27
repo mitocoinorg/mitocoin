@@ -20,17 +20,17 @@ Dependencies
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-Build Bolsonarocoin Core
+Build Mitocoin Core
 ------------------------
 
-1. Clone the bolsonarocoin source code and cd into `bolsonarocoin`
+1. Clone the mitocoin source code and cd into `mitocoin`
 
-        git clone https://github.com/bolsonarocoin-project/bolsonarocoin
-        cd bolsonarocoin
+        git clone https://github.com/mitocoin-project/mitocoin
+        cd mitocoin
 
-2.  Build bolsonarocoin-core:
+2.  Build mitocoin-core:
 
-    Configure and build the headless bolsonarocoin binaries as well as the GUI (if Qt is found).
+    Configure and build the headless mitocoin binaries as well as the GUI (if Qt is found).
 
     You can disable the GUI build by passing `--without-gui` to configure.
 
@@ -49,37 +49,37 @@ Build Bolsonarocoin Core
 Running
 -------
 
-Bolsonarocoin Core is now available at `./src/bolsonarocoind`
+Mitocoin Core is now available at `./src/mitocoind`
 
 Before running, it's recommended you create an RPC configuration file.
 
-    echo -e "rpcuser=bolsonarocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Bolsonarocoin/bolsonarocoin.conf"
+    echo -e "rpcuser=mitocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Mitocoin/mitocoin.conf"
 
-    chmod 600 "/Users/${USER}/Library/Application Support/Bolsonarocoin/bolsonarocoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/Mitocoin/mitocoin.conf"
 
-The first time you run bolsonarocoind, it will start downloading the blockchain. This process could take several hours.
+The first time you run mitocoind, it will start downloading the blockchain. This process could take several hours.
 
 You can monitor the download process by looking at the debug.log file:
 
-    tail -f $HOME/Library/Application\ Support/Bolsonarocoin/debug.log
+    tail -f $HOME/Library/Application\ Support/Mitocoin/debug.log
 
 Other commands:
 -------
 
-    ./src/bolsonarocoind -daemon # Starts the bolsonarocoin daemon.
-    ./src/bolsonarocoin-cli --help # Outputs a list of command-line options.
-    ./src/bolsonarocoin-cli help # Outputs a list of RPC commands when the daemon is running.
+    ./src/mitocoind -daemon # Starts the mitocoin daemon.
+    ./src/mitocoin-cli --help # Outputs a list of command-line options.
+    ./src/mitocoin-cli help # Outputs a list of RPC commands when the daemon is running.
 
 Using Qt Creator as IDE
 ------------------------
-You can use Qt Creator as an IDE, for bolsonarocoin development.
+You can use Qt Creator as an IDE, for mitocoin development.
 Download and install the community edition of [Qt Creator](https://www.qt.io/download/).
 Uncheck everything except Qt Creator during the installation process.
 
 1. Make sure you installed everything through Homebrew mentioned above
 2. Do a proper ./configure --enable-debug
 3. In Qt Creator do "New Project" -> Import Project -> Import Existing Project
-4. Enter "bolsonarocoin-qt" as project name, enter src/qt as location
+4. Enter "mitocoin-qt" as project name, enter src/qt as location
 5. Leave the file selection as it is
 6. Confirm the "summary page"
 7. In the "Projects" tab select "Manage Kits..."

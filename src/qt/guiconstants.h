@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 36
 
-#define QAPP_ORG_NAME "Bolsonarocoin"
-#define QAPP_ORG_DOMAIN "bolsonarocoin.org"
-#define QAPP_APP_NAME_DEFAULT "Bolsonarocoin-Qt"
-#define QAPP_APP_NAME_TESTNET "Bolsonarocoin-Qt-testnet"
+#define QAPP_ORG_NAME "Mitocoin"
+#define QAPP_ORG_DOMAIN "mitocoin.org"
+#define QAPP_APP_NAME_DEFAULT "Mitocoin-Qt"
+#define QAPP_APP_NAME_TESTNET "Mitocoin-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

@@ -58,7 +58,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
  */
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
-    const char* pszTimestamp = "Feito, first alt with latest litecoin code";
+    const char* pszTimestamp = "A moeda brasileira, a moeda dos mitos";
     const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
@@ -81,15 +81,15 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 840000;
+        consensus.nSubsidyHalvingInterval = 1000000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 710000;
         consensus.BIP34Hash = uint256S("fa09d204a83a768ed5a7c8d441fa62f2043abf420cff1226c7b4329aeb9d51cf");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"); 
-        consensus.nPowTargetTimespan = 1 * 24 * 60 * 60; // 1 days
-        consensus.nPowTargetSpacing = 1 * 60;
+        consensus.nPowTargetTimespan = 2 * 24 * 60 * 60; // 1 days
+        consensus.nPowTargetSpacing = 2 * 60;
         consensus.fPowAllowMinDifficultyBlocks = false;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 4320; // 75% of 5760
@@ -122,7 +122,7 @@ public:
         nDefaultPort = 59333;//from 59333 to 
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1497958610, 2085413547, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1501108258, 1423337, 0x1e0ffff0, 1, 50 * COIN);
 
         // consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
         
@@ -160,16 +160,16 @@ public:
         // cout << genesis.hashMerkleRoot.ToString()<< endl;
                 //fc540599a3265e4526f331cda4c32fac8c35018ea394e913cfcf74bc16808e8c
         //0x6a33cc213ec3f1b1126ba37b9933d44af40c570ae0c4a623b7d3c1959b3646c2
-        assert(consensus.hashGenesisBlock == uint256S("0x8af0a31988b9e8448a117738784029da60f9659d7b2e493fc6fbc0e106851414"));
-        assert(genesis.hashMerkleRoot == uint256S("0xc93b6ce91b097335eae3c0d86e384fb897ab93e9202836be1038c091d77d489a"));
+        assert(consensus.hashGenesisBlock == uint256S("0xb00d430b50159efe556bf075d2c5011ecfaa5aa9d5f37b53cdb16bb078d618f6"));
+        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vFixedSeeds.clear();
         vSeeds.clear();
-        // vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.bolsonarocoin.loshan.co.uk", true));
+        // vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-a.mitocoin.loshan.co.uk", true));
         // vSeeds.push_back(CDNSSeedData("thrasher.io", "dnsseed.thrasher.io", true));
-        // vSeeds.push_back(CDNSSeedData("bolsonarocointools.com", "dnsseed.bolsonarocointools.com"));
-        // vSeeds.push_back(CDNSSeedData("bolsonarocoinpool.org", "dnsseed.bolsonarocoinpool.org"));
+        // vSeeds.push_back(CDNSSeedData("mitocointools.com", "dnsseed.mitocointools.com"));
+        // vSeeds.push_back(CDNSSeedData("mitocoinpool.org", "dnsseed.mitocoinpool.org"));
         // vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
@@ -188,9 +188,9 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0x8af0a31988b9e8448a117738784029da60f9659d7b2e493fc6fbc0e106851414"))
+			(  0, uint256S("0xb00d430b50159efe556bf075d2c5011ecfaa5aa9d5f37b53cdb16bb078d618f6"))
 			,
-			1497958610, // * UNIX timestamp of last checkpoint block
+			1501108258, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
 			500.0     // * estimated number of transactions per day after checkpoint
@@ -207,15 +207,15 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 840000;
+        consensus.nSubsidyHalvingInterval = 1000000;
         consensus.nMajorityEnforceBlockUpgrade = 51;
         consensus.nMajorityRejectBlockOutdated = 75;
         consensus.nMajorityWindow = 100;
         consensus.BIP34Height = 400000;
         consensus.BIP34Hash = uint256S("0x860157ab24717e9694216938a9ae08cf4d58a15ca59a861e2d8469af0e6a1d50");
         consensus.powLimit = uint256S("00000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
-        consensus.nPowTargetTimespan = 1 * 24 * 60 * 60; // 1 days
-        consensus.nPowTargetSpacing = 1 * 60;
+        consensus.nPowTargetTimespan = 2 * 24 * 60 * 60; // 1 days
+        consensus.nPowTargetSpacing = 2 * 60;
         consensus.fPowAllowMinDifficultyBlocks = true;
         consensus.fPowNoRetargeting = false;
         consensus.nRuleChangeActivationThreshold = 1512; // 75% for testchains
@@ -244,7 +244,7 @@ public:
         nDefaultPort = 159333;//from 159333 to 
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1485561600, 1062793, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1491108861, 1121377, 0x1e0ffff0, 1, 50 * COIN);
         // added by freeman
         //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
         if (false && genesis.GetHash() != consensus.hashGenesisBlock)
@@ -261,16 +261,16 @@ public:
         consensus.hashGenesisBlock = genesis.GetHash();
         // cout << consensus.hashGenesisBlock.ToString() << endl;
         // cout << genesis.hashMerkleRoot.ToString() << endl;
-        assert(consensus.hashGenesisBlock == uint256S("0xbdeb09e5fdbaa30befa79be588e15ffc467b63e492724664777a387b8496c46a"));
-        assert(genesis.hashMerkleRoot == uint256S("0xc93b6ce91b097335eae3c0d86e384fb897ab93e9202836be1038c091d77d489a"));
+        assert(consensus.hashGenesisBlock == uint256S("0xe832f185135133f0ee95a778e531e564a531b20cd4da69a756d4f14b64c3e531"));
+        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
         // nodes with support for servicebits filtering should be at the top
         vFixedSeeds.clear();
         vSeeds.clear();
-        // vSeeds.push_back(CDNSSeedData("bolsonarocointools.com", "testnet-seed.bolsonarocointools.com"));
-        // vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.bolsonarocoin.loshan.co.uk", true));
+        // vSeeds.push_back(CDNSSeedData("mitocointools.com", "testnet-seed.mitocointools.com"));
+        // vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.mitocoin.loshan.co.uk", true));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,100);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
@@ -280,7 +280,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_test, pnSeed6_test + ARRAYLEN(pnSeed6_test));
 
-        fMiningRequiresPeers = true;
+        fMiningRequiresPeers = false;
         fDefaultConsistencyChecks = false;
         fRequireStandard = false;
         fMineBlocksOnDemand = false;
@@ -289,12 +289,9 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0xbdeb09e5fdbaa30befa79be588e15ffc467b63e492724664777a387b8496c46a"))
-            ( 1, uint256S("0x9831bdd18bdfa485d12aca56ae7d30022df57ccdcc3d22792119ba726db33614"))
-            ( 2, uint256S("0x86690b250c443b1e91aedf92af1e7dabafe8b09b25c794a4d39bd5823cdf5d40"))
-            ( 3, uint256S("0x054df0f27a598753ef0c67dcaf75d959b2bc21f46b86900197b524e0528241bf")),
-            1499047871,
-            2,
+            ( 0, uint256S("0xe832f185135133f0ee95a778e531e564a531b20cd4da69a756d4f14b64c3e531")),
+            1491108861,
+            0,
             200            
         };
 
@@ -342,10 +339,10 @@ public:
         nDefaultPort = 19444;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1296688602, 0, 0x207fffff, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1481109615, 1053647, 0x1e0ffff0, 1, 50 * COIN);
 
-        consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
-        if (true && genesis.GetHash() != consensus.hashGenesisBlock)
+        //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
+        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
         {
             LogPrintf("recalculating params for regtest.\n");
             LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
@@ -360,8 +357,8 @@ public:
 
         // cout << consensus.hashGenesisBlock.ToString() << endl;
         // cout << genesis.hashMerkleRoot.ToString() << endl;
-        assert(consensus.hashGenesisBlock == uint256S("0x4806d7208c11e005f8e2d9d359069d42bb77f8946970b815b50057ffdd657702"));
-        assert(genesis.hashMerkleRoot == uint256S("0xc93b6ce91b097335eae3c0d86e384fb897ab93e9202836be1038c091d77d489a"));
+        assert(consensus.hashGenesisBlock == uint256S("0xd0349811925ee4b8cfb06fb543a07c230a37a987bf4f8bfa6e2e96041a3ecaf3"));
+        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -374,7 +371,7 @@ public:
 
 	checkpointData = (CCheckpointData){
 		boost::assign::map_list_of
-			( 0, uint256S("0x4806d7208c11e005f8e2d9d359069d42bb77f8946970b815b50057ffdd657702"))
+			( 0, uint256S("0xd0349811925ee4b8cfb06fb543a07c230a37a987bf4f8bfa6e2e96041a3ecaf3"))
             ,
 			0,
 			0,
