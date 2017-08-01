@@ -7,7 +7,7 @@ https://
 What is Mitocoin?
 ----------------
 
-Mitocoin is an experimental test digital currency based on LiteCoin version 0,13.
+Mitocoin is an experimental test digital currency based on LiteCoin version 0,1.
 It keeps all its main characteristics creating just a new genesis block, and some small modifications.
 
 For more information, as well as an immediately useable, binary version of

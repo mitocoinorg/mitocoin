@@ -59,7 +59,7 @@ static CBlock CreateGenesisBlock(const char* pszTimestamp, const CScript& genesi
 static CBlock CreateGenesisBlock(uint32_t nTime, uint32_t nNonce, uint32_t nBits, int32_t nVersion, const CAmount& genesisReward)
 {
     const char* pszTimestamp = "A moeda brasileira, a moeda dos mitos";
-    const CScript genesisOutputScript = CScript() << ParseHex("040184710fa689ad5023690c80f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
+    const CScript genesisOutputScript = CScript() << ParseHex("060184710fa689ad5023690c45f3a49c8f13f8d45b8c857fbcbc8bc4a8e4d3eb4b10f4d4604fa08dce601aaf0f470216fe1b51850b4acf21b179c45070ac7b03a9") << OP_CHECKSIG;
     return CreateGenesisBlock(pszTimestamp, genesisOutputScript, nTime, nNonce, nBits, nVersion, genesisReward);
 }
 
@@ -81,7 +81,7 @@ class CMainParams : public CChainParams {
 public:
     CMainParams() {
         strNetworkID = "main";
-        consensus.nSubsidyHalvingInterval = 1000000;
+        consensus.nSubsidyHalvingInterval = 700000;
         consensus.nMajorityEnforceBlockUpgrade = 750;
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
@@ -119,49 +119,16 @@ public:
         pchMessageStart[1] = 0xc3;
         pchMessageStart[2] = 0xd6;
         pchMessageStart[3] = 0xeb;
-        nDefaultPort = 59333;//from 59333 to 
+        nDefaultPort = 11533;//from  to 
         nPruneAfterHeight = 100000;
 
-        genesis = CreateGenesisBlock(1501108258, 1423337, 0x1e0ffff0, 1, 50 * COIN);
-
-        // consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
-        
-            // cout << "old pow" + genesis.GetPoWHash().ToString() << endl;
-        
-
-        // if (true && genesis.GetHash() != consensus.hashGenesisBlock)
-        // {
-        //     cout << "entraa" << endl;
-
-        //     LogPrintf("recalculating params for mainnet.\n");
-        //     LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
-        //     // strprintf(consensus.hashGenesisBlock);
-        //     LogPrintf("old mainnet genesis hash:  %s\n", consensus.hashGenesisBlock.ToString());
-        //     cout << "old " + genesis.GetHash().ToString() << endl;
-
-        //     // deliberately empty for loop finds nonce value.
-        //     for(genesis.nNonce = 0; consensus.powLimit < genesis.GetPoWHash()  ; genesis.nNonce++){ 
-        //         cout << std::to_string(genesis.nNonce) << endl;
-        //         cout << genesis.GetHash().ToString() << endl;
-        //     } 
-        //     cout << "new pow " + genesis.GetPoWHash().ToString() << endl;
-
-        //     LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
-        //     LogPrintf("new mainnet genesis nonce: %s\n", genesis.nNonce);
-        //     LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
-        // }
+        genesis = CreateGenesisBlock(1501108258, 2806156, 0x1e0ffff0, 1, 50 * COIN);
 
         
-
         consensus.hashGenesisBlock = genesis.GetHash();
-        // cout << consensus.hashGenesisBlock.ToString() << endl;
-        // cout << std::to_string(genesis.nNonce) << endl;
-        // cout << std::to_string(genesis.nNonce) << endl;
-        // cout << genesis.hashMerkleRoot.ToString()<< endl;
-                //fc540599a3265e4526f331cda4c32fac8c35018ea394e913cfcf74bc16808e8c
-        //0x6a33cc213ec3f1b1126ba37b9933d44af40c570ae0c4a623b7d3c1959b3646c2
-        assert(consensus.hashGenesisBlock == uint256S("0xb00d430b50159efe556bf075d2c5011ecfaa5aa9d5f37b53cdb16bb078d618f6"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
+        
+        assert(consensus.hashGenesisBlock == uint256S("0xc6bdb574bb1d9a23fb9ecbebbd990cfe489bd7fdb84a1b5ced8309c34cbc956d"));
+        assert(genesis.hashMerkleRoot == uint256S("0xb3a99802b4075711ba68ea0f4a7ae104b796d774237d21eff8046b4e77cb3fbc"));
 
         // Note that of those with the service bits flag, most only support a subset of possible options
         vFixedSeeds.clear();
@@ -172,9 +139,9 @@ public:
         // vSeeds.push_back(CDNSSeedData("mitocoinpool.org", "dnsseed.mitocoinpool.org"));
         // vSeeds.push_back(CDNSSeedData("koin-project.com", "dnsseed.koin-project.com"));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,38);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,176);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,50);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,15);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,170);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
@@ -188,7 +155,7 @@ public:
 
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
-			(  0, uint256S("0xb00d430b50159efe556bf075d2c5011ecfaa5aa9d5f37b53cdb16bb078d618f6"))
+			(  0, uint256S("0xc6bdb574bb1d9a23fb9ecbebbd990cfe489bd7fdb84a1b5ced8309c34cbc956d"))
 			,
 			1501108258, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
@@ -207,7 +174,7 @@ class CTestNetParams : public CChainParams {
 public:
     CTestNetParams() {
         strNetworkID = "test";
-        consensus.nSubsidyHalvingInterval = 1000000;
+        consensus.nSubsidyHalvingInterval = 700000;
         consensus.nMajorityEnforceBlockUpgrade = 51;
         consensus.nMajorityRejectBlockOutdated = 75;
         consensus.nMajorityWindow = 100;
@@ -241,28 +208,17 @@ public:
         pchMessageStart[1] = 0xe1;
         pchMessageStart[2] = 0xd4;
         pchMessageStart[3] = 0xdf;
-        nDefaultPort = 159333;//from 159333 to 
+        nDefaultPort = 21533;//from to 
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1491108861, 1121377, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1491108861, 2914306, 0x1e0ffff0, 1, 50 * COIN);
         // added by freeman
         //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
-        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
-        {
-            LogPrintf("recalculating params for testnet.\n");
-            LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
-            LogPrintf("old mainnet genesis hash:  %s\n", consensus.hashGenesisBlock.ToString());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce = 0; consensus.powLimit < genesis.GetHash(); genesis.nNonce++){ } 
-            LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
-            LogPrintf("new mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
-            LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
-        }
+        
         consensus.hashGenesisBlock = genesis.GetHash();
-        // cout << consensus.hashGenesisBlock.ToString() << endl;
-        // cout << genesis.hashMerkleRoot.ToString() << endl;
-        assert(consensus.hashGenesisBlock == uint256S("0xe832f185135133f0ee95a778e531e564a531b20cd4da69a756d4f14b64c3e531"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
+        
+        assert(consensus.hashGenesisBlock == uint256S("0x5c60290dd7e523a9e976c32469029f834c0bac4910c70aed48f9b242c3f7b52e"));
+        assert(genesis.hashMerkleRoot == uint256S("0xb3a99802b4075711ba68ea0f4a7ae104b796d774237d21eff8046b4e77cb3fbc"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -272,9 +228,9 @@ public:
         // vSeeds.push_back(CDNSSeedData("mitocointools.com", "testnet-seed.mitocointools.com"));
         // vSeeds.push_back(CDNSSeedData("loshan.co.uk", "seed-b.mitocoin.loshan.co.uk", true));
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,100);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,196);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,239);
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,190);
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,206);
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,249);
         base58Prefixes[EXT_PUBLIC_KEY] = boost::assign::list_of(0x04)(0x35)(0x87)(0xCF).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = boost::assign::list_of(0x04)(0x35)(0x83)(0x94).convert_to_container<std::vector<unsigned char> >();
 
@@ -289,7 +245,7 @@ public:
 
         checkpointData = (CCheckpointData) {
             boost::assign::map_list_of
-            ( 0, uint256S("0xe832f185135133f0ee95a778e531e564a531b20cd4da69a756d4f14b64c3e531")),
+            ( 0, uint256S("0x5c60290dd7e523a9e976c32469029f834c0bac4910c70aed48f9b242c3f7b52e")),
             1491108861,
             0,
             200            
@@ -336,29 +292,17 @@ public:
         pchMessageStart[1] = 0xbd;
         pchMessageStart[2] = 0xb1;
         pchMessageStart[3] = 0xdc;
-        nDefaultPort = 19444;
+        nDefaultPort = 21543;
         nPruneAfterHeight = 1000;
 
-        genesis = CreateGenesisBlock(1481109615, 1053647, 0x1e0ffff0, 1, 50 * COIN);
+        genesis = CreateGenesisBlock(1481109615, 905406, 0x1e0ffff0, 1, 50 * COIN);
 
-        //consensus.hashGenesisBlock = uint256S("0x0000000000000000000000000000000000000000000000000000000000000001");
-        if (false && genesis.GetHash() != consensus.hashGenesisBlock)
-        {
-            LogPrintf("recalculating params for regtest.\n");
-            LogPrintf("old mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
-            LogPrintf("old mainnet genesis hash:  %s\n", consensus.hashGenesisBlock.ToString());
-            // deliberately empty for loop finds nonce value.
-            for(genesis.nNonce = 0; consensus.powLimit < genesis.GetHash(); genesis.nNonce++){ } 
-            LogPrintf("new mainnet genesis merkle root: %s\n", genesis.hashMerkleRoot.ToString());
-            LogPrintf("new mainnet genesis nonce: %s\n", std::to_string(genesis.nNonce));
-            LogPrintf("new mainnet genesis hash: %s\n", genesis.GetHash().ToString());
-        }
         consensus.hashGenesisBlock = genesis.GetHash();
 
         // cout << consensus.hashGenesisBlock.ToString() << endl;
         // cout << genesis.hashMerkleRoot.ToString() << endl;
-        assert(consensus.hashGenesisBlock == uint256S("0xd0349811925ee4b8cfb06fb543a07c230a37a987bf4f8bfa6e2e96041a3ecaf3"));
-        assert(genesis.hashMerkleRoot == uint256S("0x72f9d3391b971575a87e1cf679170eef7497f94b8e4999b2e1e6fe38f036bf61"));
+        assert(consensus.hashGenesisBlock == uint256S("0xe6a9a95d1935c7ac23342433903ce21a25aff25ac0313138bc8f7ea3179f3eac"));
+        assert(genesis.hashMerkleRoot == uint256S("0xb3a99802b4075711ba68ea0f4a7ae104b796d774237d21eff8046b4e77cb3fbc"));
 
         vFixedSeeds.clear(); //!< Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();      //!< Regtest mode doesn't have any DNS seeds.
@@ -371,7 +315,7 @@ public:
 
 	checkpointData = (CCheckpointData){
 		boost::assign::map_list_of
-			( 0, uint256S("0xd0349811925ee4b8cfb06fb543a07c230a37a987bf4f8bfa6e2e96041a3ecaf3"))
+			( 0, uint256S("0xe6a9a95d1935c7ac23342433903ce21a25aff25ac0313138bc8f7ea3179f3eac"))
             ,
 			0,
 			0,
