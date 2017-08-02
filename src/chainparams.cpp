@@ -109,7 +109,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x000000000000000000000000000000000000000000000005c13f99f6d0b1a908");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000001600160");
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -156,8 +156,16 @@ public:
 	checkpointData = (CCheckpointData) {
 		boost::assign::map_list_of
 			(  0, uint256S("0xc6bdb574bb1d9a23fb9ecbebbd990cfe489bd7fdb84a1b5ced8309c34cbc956d"))
+            (  2, uint256S("0x1c34de7d8c5b81fccf814627e64b36aeefcce2658d13cb0b92c0b2ac29b0a842"))
+            (  4, uint256S("0x813204c5c1197dba14239ab8fac2dfbc4ab20fb53b16fc68aa83cb67896cb32e"))
+            (  6, uint256S("0x3602d78c00365fe4ada9b38a103d7c4321c0687a774d372ed9be4fcbb13a6077"))
+            (  8, uint256S("0x288c23ea85c80ff8c241fd0e9982b59e1974a55f34c7411f705c279945f7ce1a"))
+            (  10, uint256S("0xed311a1e30ed22d0afc3261d5b5579411774dc58dc5147ede8cdd16ee1b02be2"))
+            (  12, uint256S("0xbe22f7385a259affdefcc6ce22a4ef01c96a95508df407924de93d80440aea71"))
+            (  14, uint256S("0x54f3aebd30d9f08ea18b53697feaa7e628f6546e03d890639a4e0de4a98fd93d"))
+            (  21, uint256S("0xccbabd529712688fd12c57ac370eec0ec45843c98ffc916cd64dfaeb43b36ca6"))
 			,
-			1501108258, // * UNIX timestamp of last checkpoint block
+			1501702493, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
 			500.0     // * estimated number of transactions per day after checkpoint

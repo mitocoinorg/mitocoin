@@ -1734,7 +1734,6 @@ CAmount GetBlockSubsidy(int nHeight, const Consensus::Params& consensusParams)
 
 bool IsInitialBlockDownload()
 {
-    return false;    
     const CChainParams& chainParams = Params();
 
     // Once this function has returned false, it must remain false.
@@ -1746,12 +1745,12 @@ bool IsInitialBlockDownload()
     LOCK(cs_main);
     if (latchToFalse.load(std::memory_order_relaxed))
         return false;
-    // if (fImporting || fReindex)
-    //     return true;
-    // if (chainActive.Tip() == NULL)
-    //     return true;
-    // if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork))
-    //     return true;
+    if (fImporting || fReindex)
+        return true;
+    if (chainActive.Tip() == NULL)
+        return true;
+    if (chainActive.Tip()->nChainWork < UintToArith256(chainParams.GetConsensus().nMinimumChainWork))
+        return true;
     if (chainActive.Tip()->GetBlockTime() < (GetTime() - nMaxTipAge))
         return true;
     latchToFalse.store(true, std::memory_order_relaxed);
