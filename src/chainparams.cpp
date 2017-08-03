@@ -20,6 +20,28 @@
 #include <string>
 
 #include "util.h"
+#include "main.h"
+
+
+
+#include "base58.h"
+#include "amount.h"
+#include "chain.h"
+#include "chainparams.h"
+#include "consensus/consensus.h"
+#include "consensus/params.h"
+#include "consensus/validation.h"
+#include "core_io.h"
+#include "init.h"
+#include "main.h"
+#include "miner.h"
+#include "net.h"
+#include "pow.h"
+#include "rpc/server.h"
+#include "txmempool.h"
+#include "util.h"
+#include "utilstrencodings.h"
+#include "validationinterface.h"
 using namespace std;
 
 
@@ -109,7 +131,7 @@ public:
         consensus.vDeployments[Consensus::DEPLOYMENT_SEGWIT].nTimeout = 1517356801; // January 31st, 2018
 
         // The best chain should have at least this much work.
-        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000001600160");
+        consensus.nMinimumChainWork = uint256S("0x0000000000000000000000000000000000000000000000000000000001500150");
         /**
          * The message start string is designed to be unlikely to occur in normal data.
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
@@ -126,6 +148,14 @@ public:
 
         
         consensus.hashGenesisBlock = genesis.GetHash();
+/*
+        if (IsInitialBlockDownload())
+            cout << "siiiiiiiiiiiiiii" << endl;
+        else
+            cout << "noooooooooo" << endl;
+*/
+
+        
         
         assert(consensus.hashGenesisBlock == uint256S("0xc6bdb574bb1d9a23fb9ecbebbd990cfe489bd7fdb84a1b5ced8309c34cbc956d"));
         assert(genesis.hashMerkleRoot == uint256S("0xb3a99802b4075711ba68ea0f4a7ae104b796d774237d21eff8046b4e77cb3fbc"));
@@ -163,9 +193,9 @@ public:
             (  10, uint256S("0xed311a1e30ed22d0afc3261d5b5579411774dc58dc5147ede8cdd16ee1b02be2"))
             (  12, uint256S("0xbe22f7385a259affdefcc6ce22a4ef01c96a95508df407924de93d80440aea71"))
             (  14, uint256S("0x54f3aebd30d9f08ea18b53697feaa7e628f6546e03d890639a4e0de4a98fd93d"))
-            (  21, uint256S("0xccbabd529712688fd12c57ac370eec0ec45843c98ffc916cd64dfaeb43b36ca6"))
+            (  20, uint256S("0xcdc66b908ad9fbfbb2e9583024b2d5cb028be425db4bc71bd3984af7f25d177a"))
 			,
-			1501702493, // * UNIX timestamp of last checkpoint block
+			1501702486, // * UNIX timestamp of last checkpoint block
 			0,   // * total number of transactions between genesis and last checkpoint
 			//   (the tx=... number in the SetBestChain debug.log lines)
 			500.0     // * estimated number of transactions per day after checkpoint
