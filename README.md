@@ -24,7 +24,7 @@ the Mitocoin client sofware, see http://www.mitocoin.org.
 License
 -------
 
-Mitocoin is released under the terms of the MIT license. See `COPYING` for more
+Mitocoin is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see http://opensource.org/licenses/MIT.
 
 Development Process
